@@ -1,0 +1,109 @@
+.theadUsuariosAdministradores {
+    background-color: #05C7F2;
+    color: #F2F2F2!important;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    align-self: flex-start;
+    margin-bottom: 5px; 
+}
+
+.form-group input {
+    height: 100px; 
+}
+
+.navtab_estados{
+    background-color: #05C7F2;
+    color: #F2F2F2!important;
+}
+
+/* Estilo para el botón activo */
+.nav-pills .nav-item .nav-link.active {
+    background-color: #05C7F2;
+    color: #F2F2F2;
+}
+
+/* Estilo para los botones inactivos */
+.nav-pills .nav-item .nav-link:not(.active) {
+    background-color: transparent; /* Color de fondo predeterminado */
+    color: #000; /* Color de texto para botones inactivos */
+}
+
+
+#container_perfil {
+    margin-top: 50px;
+}
+
+#card_perfil {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#card_perfil img {
+    border-radius: 50%;
+}
+
+#cardbody_perfil{
+    padding: 30px;
+}
+
+.profile-info h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info p {
+    color: #777;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.password-container input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+#changePasswordBtn {
+    background-color: #3498db;
+    border-color: #04D9B2;
+}
+
+
+
+
+/*color de texto del login*/
+.login-text {
+	font-size: 22px;
+	margin-left: 10px;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	color: #F2F2F2
+}
+
+/*color de rectangulos de estadistica*/
+.estadisticaRectangulos {
+	font-size: 22px;
+	margin-left: 10px;
+	margin-bottom: 0;
+	letter-spacing: 1px;
+	color: #04D9B2
+}
+
+/*Estilos para números del correo autentificacion*/
+
+.colorCorreo {
+	font-size:23px;
+    line-height:20px;
+    color:#fcfdff;
+    margin:0;
+    word-break:break-word
+}
