@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
+use App\Http\Controllers\Vendedores\ControllerPefil;
 use Illuminate\Support\Facades\Route;
 
 /*
