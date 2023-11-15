@@ -22,7 +22,7 @@ Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show'
 //Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
 
 
-Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'showEmpresarila'])->name('perfil.show');
+Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'perfilEmpresarial'])->name('perfil.show');
 
 
 
