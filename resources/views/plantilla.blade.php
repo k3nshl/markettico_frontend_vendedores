@@ -207,7 +207,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ route('perfil.perfilindividual', ['id' => 1]) }}">
+                                <a class="dropdown-item" href="{{ route('perfil.perfilIndividual', ['id' => 1]) }}">
                                     <i class="bx bx-user"></i><span>Perfil individual</span>
                                 </a>
                             </li>
