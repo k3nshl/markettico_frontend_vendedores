@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ControllerPefil;
+use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,16 @@ Route::view('/', 'plantilla');
 Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
 //Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
 
+
 Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'showEmpresarila'])->name('perfil.show');
+
+
+
+
+
+
+Route::resource('gestionarProductos', ControllerGestionarProductos::class);
+
+Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
+
+

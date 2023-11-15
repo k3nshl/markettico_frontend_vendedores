@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('../assets/images/logo-markettico-icono.png') }}">
     <!--plugins-->
     <link rel="stylesheet" href="{{ asset('../assets/plugins/simplebar/css/simplebar.css') }}">
+    <link href="{{ asset('../assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('../assets/plugins/metismenu/css/metisMenu.min.css') }}">
     <!-- loader-->
@@ -58,10 +59,10 @@
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='lni lni-crown'></i>
                         </div>
-                        <div class="menu-title">Opcion 1</div>
+                        <div class="menu-title">Productos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Opcion</a>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
                         </li>
                     </ul>
                 </li>
