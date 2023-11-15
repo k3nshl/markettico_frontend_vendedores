@@ -120,3 +120,23 @@
     margin:0;
     word-break:break-word
 }
+
+#card_perfil img {
+    border-radius: 3%;
+}
+
+.cover-photo {
+    height: 307px;
+    overflow: hidden;
+}
+
+.profile-img-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#inputFile {
+    display: none;
+}

@@ -9,12 +9,28 @@
         <div class="container" id="container_perfil">
             <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="card_perfil">
                 <div class="card-body" id="cardbody_perfil">
-                    <div class="d-flex flex-column align-items-center text-center">
-                        <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
-                            width="110" style="background-color: #04D9B2;">
-                        <div class="mt-3 profile-info">
-                            <span id="nombre_completo">Delia Smith</span>
-                            <p class="text-secondary mb-1">Vendedor</p>
+
+                    <div class="position-relative">
+                       
+                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de portada">
+                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
+                        </label>
+                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
+                            onchange="handleCoverFileSelect(event)">
+
+                        <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
+                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
+                                <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
+                                    width="110" style="background-color: #04D9B2; z-index: 1;">
+                            </label>
+                            <input type="file" id="inputFile" style="display: none;" accept="image/*"
+                                onchange="handleFileSelect(event)">
+
+                            <div class="mt-3 profile-info">
+                                <span id="id_vendedor_propietario">Delia Smith</span>
+                                <p class="text-secondary mb-1">Vendedor</p>
+                                <span id="ubicacion" class="text-muted font-size-sm">Limón city</span>
+                            </div>
                         </div>
                     </div>
                     <hr class="my-4">

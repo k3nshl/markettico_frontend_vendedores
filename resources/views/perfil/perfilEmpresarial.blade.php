@@ -8,27 +8,6 @@
         <div class="container" id="container_perfil">
             <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="card_perfil">
                 <div class="card-body" id="cardbody_perfil">
-                    <style>
-                        #card_perfil img {
-                            border-radius: 3%;
-                        }
-
-                        .cover-photo {
-                            height: 307px;
-                            overflow: hidden;
-                        }
-
-                        .profile-img-btn {
-                            background-color: transparent;
-                            border: none;
-                            outline: none;
-                            cursor: pointer;
-                        }
-
-                        #inputFile {
-                            display: none;
-                        }
-                    </style>
                     <div class="position-relative">
                         <!-- Agregamos una clase para establecer una foto de portada -->
                         <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de portada">
