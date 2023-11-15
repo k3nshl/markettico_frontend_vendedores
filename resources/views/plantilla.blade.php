@@ -62,7 +62,7 @@
                         <div class="menu-title">Productos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
+                        <li> <a href="{{ route('gestionarProductos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
                         </li>
                     </ul>
                 </li>
