@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('../assets/images/logo-markettico-icono.png') }}">
     <!--plugins-->
     <link rel="stylesheet" href="{{ asset('../assets/plugins/simplebar/css/simplebar.css') }}">
+    <link href="{{ asset('../assets/plugins/Drag-And-Drop/dist/imageuploadify.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}">
     <link rel="stylesheet" href="{{ asset('../assets/plugins/metismenu/css/metisMenu.min.css') }}">
     <!-- loader-->
