@@ -13,7 +13,7 @@
                         <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
                             width="110" style="background-color: #04D9B2;">
                         <div class="mt-3 profile-info">
-                            <span id="nombre_completo">Delia Smith</span>
+                            <span id="id_vendedor_propietario">Delia Smith</span>
                             <p class="text-secondary mb-1">Vendedor</p>
                             <span id="ubicacion" class="text-muted font-size-sm">Limón city</span>
                         </div>
@@ -22,10 +22,10 @@
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Nombre del vendedor propietario:</h6>
+                            <h6 class="mb-0">Nombre:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="id_vendedor_propietario">Juan</span>
+                            <span id="nombre_completo">Tienda de Palomas</span>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -167,7 +167,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono:</h6>
+                            <h6 class="mb-0">Teléfono personal:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="telefono">8924838</span>
@@ -191,7 +191,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación</h6>
+                            <h6 class="mb-0">Tipo de identificación:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
@@ -199,7 +199,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de vendedor</h6>
+                            <h6 class="mb-0">Tipo de vendedor:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_vendedor">no sé</span>
