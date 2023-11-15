@@ -201,7 +201,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <a class="dropdown-item" href="{{ route('perfil.show', ['id' => 1]) }}">
+                                <a class="dropdown-item" href="">
                                     <i class="bx bx-user"></i><span>Perfil</span>
                                 </a>
                             </li>
