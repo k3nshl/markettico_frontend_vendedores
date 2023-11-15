@@ -12,6 +12,9 @@ class ControllerPefil extends Controller
         return view('perfil.showEmpresarial', ['id' => $id]);
     }
 
+    public function perfilIndividual($id){
+        return view('perfil.perfilIndividual', ['id' => $id]);
+    }
 
 
     /**

@@ -23,6 +23,7 @@ Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show'
 
 
 Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'showEmpresarila'])->name('perfil.show');
+Route::get('/perfilIndividual/{id}', [ControllerPefil::class, 'perfilIndividual'])->name('perfil.perfilIndividual');
 
 
 
