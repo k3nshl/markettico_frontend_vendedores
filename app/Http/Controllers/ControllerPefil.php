@@ -11,7 +11,7 @@ class ControllerPefil extends Controller
      */
     public function index()
     {
-        //
+        return view("perfil.index");
     }
 
     /**
