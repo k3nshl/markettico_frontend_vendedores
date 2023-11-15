@@ -99,19 +99,20 @@
                                                 actual:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;"
+                                                data-bs-toggle="modal" data-bs-target="#PassModal"
+                                                data-bs-dismiss="modal">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Verificar
+                                            </button>
+                                        </div>
                                     </form>
                                 </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-info text-white"
-                                        style="background-color: #04D9D9; border-color: #04D9D9;" data-bs-toggle="modal"
-                                        data-bs-target="#PassModal" data-bs-dismiss="modal">
-                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                        Verificar
-                                    </button>
-                                    </form>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,18 +135,18 @@
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-                                </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
+                                        </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-info text-white"
-                                        style="background-color: #04D9D9; border-color: #04D9D9;">
-                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                        Guardar
-                                    </button>
+                                    </form>
                                 </div>
-                                </form>
                             </div>
                         </div>
                     </div>
