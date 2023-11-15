@@ -1,3 +1,16 @@
+
+
+
+    #card_perfil img {
+        border-radius: 3%;
+    }
+    .cover-photo {
+        height: 307px;
+        overflow: hidden;
+    }
+
+
+
 .theadUsuariosAdministradores {
     background-color: #05C7F2;
     color: #F2F2F2!important;
