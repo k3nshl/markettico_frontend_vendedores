@@ -25,7 +25,7 @@
                             <h6 class="mb-0">Nombre:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="nombre_completo">Tienda de Palomas</span>
+                            <span id="id_vendedor_propietario">Vendedor 1</span>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -157,22 +157,7 @@
                         </div>
                     </div>
 
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Correo electrónico:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="correo_electronico">charcita@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono personal:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono">8924838</span>
-                        </div>
-                    </div>
+                
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Estado:</h6>
@@ -181,6 +166,7 @@
                             <span id="id_estado">Activo</span>
                         </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
@@ -189,6 +175,7 @@
                             <span id="numero_identificacion">29838727</span>
                         </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Tipo de identificación:</h6>
@@ -197,14 +184,7 @@
                             <span id="tipo_identificacion">no sé</span>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de vendedor:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="tipo_vendedor">no sé</span>
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </div>
