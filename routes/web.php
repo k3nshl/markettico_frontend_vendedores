@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ControllerPefil;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +13,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
+//Route::view('/', 'login.correoContrasena');
 
 Route::view('/', 'plantilla');
+
+Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
+//Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
