@@ -37,26 +37,28 @@
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
+                            <h6 class="mb-0">Tipo de identificación</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="tipo_identificacion">no sé</span>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Número de identificación:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="numero_identificacion">29838727</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
                             <h6 class="mb-0">Correo electrónico:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="correo_electronico">charcita@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono">8924838</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Estado:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_estado">Activo</span>
                         </div>
                     </div>
 
@@ -156,18 +158,18 @@
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Número de identificación:</h6>
+                            <h6 class="mb-0">Teléfono:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="numero_identificacion">29838727</span>
+                            <span id="telefono">8924838</span>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación</h6>
+                            <h6 class="mb-0">Estado:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="tipo_identificacion">no sé</span>
+                            <span id="id_estado">Activo</span>
                         </div>
                     </div>
                 </div>
