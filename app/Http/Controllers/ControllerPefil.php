@@ -8,7 +8,7 @@ class ControllerPefil extends Controller
 {
 
 
-    public function showEmpresarila($id){
+    public function perfilEmpresarial($id){
         return view('perfil.showEmpresarial', ['id' => $id]);
     }
 
