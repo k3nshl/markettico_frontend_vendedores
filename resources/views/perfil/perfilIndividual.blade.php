@@ -11,8 +11,8 @@
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
-                       
-                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de portada">
+
+                        <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
@@ -43,7 +43,7 @@
                             <span id="tipo_identificacion">no sé</span>
                         </div>
                     </div>
-                    
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
@@ -134,7 +134,6 @@
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-
                                 </div>
 
                                 <div class="modal-footer">
@@ -172,8 +171,94 @@
                             <span id="id_estado">Activo</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+
+                    <!-- Botón de editar con modal -->
+                    <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Editar Usuario" style="color: #F2F2F2; margin: 0 auto; display: block;">
+                        Editar información
+                    </button>
+
+                    <!-- Modal de edición -->
+                    <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
+                        aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
+                                        Editar datos de perfil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="/ruta-de-edicion" method="POST">
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <label for="tipo_identificacion" class="form-label">Tipo de
+                                                    identificación</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="tipo_identificacion"
+                                                    name="tipo_identificacion" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <label for="numero_identificacion" class="form-label">Número de
+                                                    identificación:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="numero_identificacion"
+                                                    name="numero_identificacion" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <label for="correo_electronico" class="form-label">Correo
+                                                    electrónico:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="correo_electronico"
+                                                    name="correo_electronico" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <label for="telefono" class="form-label">Teléfono:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="telefono"
+                                                    name="telefono" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-3">
+                                                <label for="id_estado" class="form-label">Estado:</label>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="id_estado"
+                                                    name="id_estado" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
     </section>
 @endsection
