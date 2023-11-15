@@ -31,7 +31,7 @@
                     </style>
                     <div class="position-relative">
                         <!-- Agregamos una clase para establecer una foto de portada -->
-                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de perfil">
+                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de portada">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
