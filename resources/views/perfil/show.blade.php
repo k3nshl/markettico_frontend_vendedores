@@ -167,7 +167,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono:</h6>
+                            <h6 class="mb-0">Teléfono personal:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="telefono">8924838</span>
@@ -191,7 +191,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación</h6>
+                            <h6 class="mb-0">Tipo de identificación:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
@@ -199,7 +199,7 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de vendedor</h6>
+                            <h6 class="mb-0">Tipo de vendedor:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_vendedor">no sé</span>
