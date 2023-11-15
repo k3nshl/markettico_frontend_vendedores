@@ -59,10 +59,10 @@
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='lni lni-crown'></i>
                         </div>
-                        <div class="menu-title">Opcion 1</div>
+                        <div class="menu-title">Productos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Opcion</a>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
                         </li>
                     </ul>
                 </li>
