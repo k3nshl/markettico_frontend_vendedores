@@ -15,53 +15,35 @@
                         <div class="mt-3 profile-info">
                             <span id="nombre_completo">Delia Smith</span>
                             <p class="text-secondary mb-1">Vendedor</p>
-                            <span id="ubicacion" class="text-muted font-size-sm">Limón city</span>
                         </div>
                     </div>
                     <hr class="my-4">
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Nombre del vendedor propietario:</h6>
+                            <h6 class="mb-0">Correo electrónico:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="id_vendedor_propietario">Juan</span>
+                            <span id="correo_electronico">charcita@gmail.com</span>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Nombre de la Empresa:</h6>
+                            <h6 class="mb-0">Teléfono:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="nombre_empresa">Apple</span>
+                            <span id="telefono">8924838</span>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono empresarial:</h6>
+                            <h6 class="mb-0">Estado:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="telefono_empresarial">60020469</span>
+                            <span id="id_estado">Activo</span>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Correo empresarial:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="correo_empresarial">char@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Cédula juridica:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="cedula_juridica">702928821</span>
-                        </div>
-                    </div>
-
-
+                    
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
@@ -159,30 +141,6 @@
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Correo electrónico:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="correo_electronico">charcita@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono personal:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono">8924838</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Estado:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_estado">Activo</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
@@ -191,18 +149,10 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación:</h6>
+                            <h6 class="mb-0">Tipo de identificación</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de vendedor:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="tipo_vendedor">no sé</span>
                         </div>
                     </div>
                 </div>

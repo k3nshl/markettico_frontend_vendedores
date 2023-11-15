@@ -23,4 +23,10 @@ Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show'
 
 
 
+
+
+
 Route::resource('gestionarProductos', ControllerGestionarProductos::class);
+
+Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
+
