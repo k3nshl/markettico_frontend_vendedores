@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Vendedores;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class ControllerPefil extends Controller
@@ -9,9 +10,12 @@ class ControllerPefil extends Controller
 
 
     public function perfilEmpresarial($id){
-        return view('perfil.showEmpresarial', ['id' => $id]);
+        return view('perfil.perfilEmpresarial', ['id' => $id]);
     }
 
+    public function perfilIndividual($id){
+        return view('perfil.perfilIndividual', ['id' => $id]);
+    }
 
 
     /**

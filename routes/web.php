@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
+use App\Http\Controllers\Vendedores\ControllerPefil;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,15 +22,11 @@ Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show'
 //Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
 
 
-Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'showEmpresarila'])->name('perfil.show');
-
-
-
-
+Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'perfilEmpresarial'])->name('perfil.show');
+Route::get('/perfilIndividual/{id}', [ControllerPefil::class, 'perfilIndividual'])->name('perfil.perfilIndividual');
 
 
 Route::resource('gestionarProductos', ControllerGestionarProductos::class);
 
-Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
 
 
