@@ -31,14 +31,14 @@
                     </style>
                     <div class="position-relative">
                         <!-- Agregamos una clase para establecer una foto de portada -->
-                        <label for="inputCoverFile" class="cover-photo-btn">
+                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de perfil">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
                             onchange="handleCoverFileSelect(event)">
 
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
-                            <label for="inputFile" class="profile-img-btn">
+                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
                                     width="110" style="background-color: #04D9B2; z-index: 1;">
                             </label>
