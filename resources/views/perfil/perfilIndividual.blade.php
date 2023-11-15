@@ -43,7 +43,7 @@
                             <span id="id_estado">Activo</span>
                         </div>
                     </div>
-                    
+
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
@@ -75,8 +75,7 @@
 
                                 {{-- Modal verificar contraseña actual --}}
                                 <div class="modal-body">
-                                    <form>
-
+                                    <form action="/verificar-contrasena-actual" method="POST">
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
                                                 actual:</label>
@@ -93,7 +92,7 @@
                                         <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                         Verificar
                                     </button>
-
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -112,13 +111,12 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form>
-
+                                    <form action="/cambiar-contrasena" method="POST">
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-                                    </form>
+
                                 </div>
 
                                 <div class="modal-footer">
@@ -130,6 +128,7 @@
                                         Guardar
                                     </button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
