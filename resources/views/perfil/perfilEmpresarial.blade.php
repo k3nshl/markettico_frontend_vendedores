@@ -64,7 +64,7 @@
                             <h6 class="mb-0">Correo empresarial:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
-                            <span id="correo_empresarial">char@gmail.com</span>
+                            <span id="correo_empresarial">yen@gmail.com</span>
                         </div>
                     </div>
                     <div class="row mb-3">
