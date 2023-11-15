@@ -10,7 +10,7 @@
                 <div class="card-body" id="cardbody_perfil">
                     <div class="position-relative">
                         <!-- Agregamos una clase para establecer una foto de portada -->
-                        <label for="inputCoverFile" class="cover-photo-btn"  title="Cambiar foto de portada">
+                        <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
@@ -200,6 +200,59 @@
                             <span id="tipo_identificacion">no sé</span>
                         </div>
                     </div>
+
+
+                    <!-- Botón de editar con modal -->
+                    <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Editar Usuario"   style="color: #F2F2F2; margin: 0 auto; display: block;">
+                        Editar información
+                    </button>
+
+
+
+                          <!-- Modal de edición -->
+                          <div class="modal fade" id="editarUsuarioEmpreModal"
+                          tabindex="-1"
+                          aria-labelledby="editarUsuarioEmpreModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title"
+                                          id="editarUsuarioEmpreModalLabel">
+                                          Editar usuario bloqueado</h5>
+                                      <button type="button" class="btn-close"
+                                          data-bs-dismiss="modal"
+                                          aria-label="Close"
+                                          data-bs-toggle="tooltip"
+                                          data-bs-placement="top"
+                                          title="Cerrar"></button>
+                                  </div>
+
+                                  <div class="modal-body">
+                                      <form>
+                                         
+                                      </form>
+                                  </div>
+
+
+                                  <div class="modal-footer">
+                                      <button type="button"
+                                          class="btn btn-secondary"
+                                          data-bs-dismiss="modal">Cerrar</button>
+                                      <button type="button"
+                                          class="btn btn-info text-white"
+                                          style="background-color: #04D9D9; border-color: #04D9D9;">
+                                          <i class="bx bx-save"
+                                              style="color: #F2F2F2;"></i>
+                                          Guardar
+                                      </button>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
 
                 </div>
             </div>
