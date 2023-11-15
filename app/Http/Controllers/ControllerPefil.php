@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 
 class ControllerPefil extends Controller
 {
+
+
+    public function showEmpresarila($id){
+        return view('perfil.showEmpresarial', ['id' => $id]);
+    }
+
+
+
     /**
      * Display a listing of the resource.
      */
@@ -34,7 +42,7 @@ class ControllerPefil extends Controller
      */
     public function show( $id)
     {
-        return view('perfil.show', ['id' => $id]);
+      
     }
 
     /**
