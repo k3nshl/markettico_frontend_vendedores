@@ -1,20 +1,19 @@
 @extends('plantilla')
 
-@section('gestion_productos', 'Productos')
+@section('gestion_nombre', 'Productos')
 
 @section('contenido')
 
-<div class="page-content">
 
     <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
                     <div class="row align-items-center">
-                        <div class="col-lg-3 col-xl-2">
-                            <a href="ecommerce-add-new-products.html" class="btn btn-primary mb-3 mb-lg-0"><i class='bx bxs-plus-square'></i>New Product</a>
+                        <div class="col-lg-3 col-xl-3">
+                            <a href="{{ route('gestionarProductos.create') }}" class="btn btn-primary mb-3 mb-lg-0"><i class='bx bxs-plus-square'></i>Agregar Producto</a>
                         </div>
-                        <div class="col-lg-9 col-xl-10">
+                        <div class="col-lg-9 col-xl-9">
                             <form class="float-lg-end">
                                 <div class="row row-cols-lg-auto g-2">
                                     <div class="col-12">
@@ -77,24 +76,11 @@
         <div class="col">
             <div class="card">
                 <img src="assets/images/products/01.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
+                
+                <div class="card-body text-center">
+                    <h6 class="card-title cursor-pointer">Silla bonita</h6>
                     <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
+                        <p class="mb-0 fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
                     </div>
                 </div>
             </div>
@@ -174,160 +160,11 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/05.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/06.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/07.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/08.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/09.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="assets/images/products/10.png" class="card-img-top" alt="...">
-                <div class="">
-                    <div class="position-absolute top-0 end-0 m-3 product-discount"><span class="">-10%</span></div>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title cursor-pointer">Nest Shaped Chair</h6>
-                    <div class="clearfix">
-                        <p class="mb-0 float-start"><strong>134</strong> Sales</p>
-                        <p class="mb-0 float-end fw-bold"><span class="me-2 text-decoration-line-through text-secondary">$350</span><span>$240</span></p>
-                    </div>
-                    <div class="d-flex align-items-center mt-3 fs-6">
-                      <div class="cursor-pointer">
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-warning'></i>
-                        <i class='bx bxs-star text-secondary'></i>
-                      </div>	
-                      <p class="mb-0 ms-auto">4.2(182)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div><!--end row-->
 
 
-</div>
+
 
 
 

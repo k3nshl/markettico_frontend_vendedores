@@ -33,6 +33,12 @@
         href="{{ asset('../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}">
 
 
+    <!--plugins editor de texto mejorado-->
+    <link rel="stylesheet" href="{{ asset('../assets/plugins/textarea-definitive/summernote-lite.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('../assets/plugins/textarea-definitive/summernote-bs5.min.css') }}">
+
+
     <title>MarketTico Admin</title>
 </head>
 
@@ -62,7 +68,8 @@
                         <div class="menu-title">Productos</div>
                     </a>
                     <ul>
-                        <li> <a href="{{ route('gestionarProductos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
+                        <li> <a href="{{ route('gestionarProductos.index') }}"><i
+                                    class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
                         </li>
                     </ul>
                 </li>
@@ -307,6 +314,11 @@
     <script src="{{ asset('assets/js/index.js') }}"></script>
     <script src="{{ asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js') }}"></script>
+    <!--Editor de texto mejorado-->
+   
+    <script src="{{ asset('../assets/plugins/textarea-definitive/summernote-lite.js') }}"></script>
+
     <script>
         $(function() {
             $(".knob").knob();
@@ -386,6 +398,28 @@
             $('#password').val('');
         });
     </script>
+
+
+    {{-- Plugin Imagenes --}}
+    <script>
+        $(document).ready(function() {
+            $('#image-uploadify').imageuploadify();
+        })
+    </script>
+
+    {{-- editor de texto mejorado --}}
+    <script>
+        $(document).ready(function() {
+            $('#summernoteResgitrarProductoServicio').summernote({
+                height: 150,
+            });
+
+            $('span.note-icon-caret').remove();
+
+            $('.note-editable').css('background', '#fff');
+        });
+    </script>
+
 
 
 </body>
