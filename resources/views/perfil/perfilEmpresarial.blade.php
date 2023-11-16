@@ -6,24 +6,21 @@
 
     <section class="content">
         <div class="container" id="container_perfil">
-            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="card_perfil">
+            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
                 <div class="card-body" id="cardbody_perfil">
                     <div class="position-relative">
-                        <!-- Agregamos una clase para establecer una foto de portada -->
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
-                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
+                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo" id="coverPhoto">
                         </label>
-                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
-                            onchange="handleCoverFileSelect(event)">
-
+                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*" onchange="handleCoverFileSelect(event)">
+                    
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
                             <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
-                                <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
-                                    width="110" style="background-color: #04D9B2; z-index: 1;">
+                                <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1" width="110"
+                                    style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
                             </label>
-                            <input type="file" id="inputFile" style="display: none;" accept="image/*"
-                                onchange="handleFileSelect(event)">
-
+                            <input type="file" id="inputFile" style="display: none;" accept="image/*" onchange="handleFileSelect(event)">
+                    
                             <div class="mt-3 profile-info">
                                 <span id="id_vendedor_propietario">Delia Smith</span>
                                 <p class="text-secondary mb-1">Vendedor</p>
@@ -31,7 +28,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
 
                     <hr class="my-4">
 
@@ -88,7 +85,7 @@
                             <div class="d-flex flex-column">
 
 
-                                <form action="#" method="POST" id="formularioEditarUsuario">
+                                <form action="#" method="POST" id="">
                                     <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
                                         data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
                                         Cambiar Contraseña
@@ -127,12 +124,16 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-info text-white"
-                                        style="background-color: #04D9D9; border-color: #04D9D9;" data-bs-toggle="modal"
-                                        data-bs-target="#PassModal" data-bs-dismiss="modal">
-                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                        Verificar
-                                    </button>
+
+                                    <form action="#" method="POST" id="">
+
+                                        <button type="button" class="btn btn-info text-white"
+                                            style="background-color: #04D9D9; border-color: #04D9D9;"
+                                            data-bs-toggle="modal" data-bs-target="#PassModal" data-bs-dismiss="modal">
+                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                            Verificar
+                                        </button>
+                                    </form>
 
                                 </div>
                             </div>
@@ -164,11 +165,15 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-info text-white"
-                                        style="background-color: #04D9D9; border-color: #04D9D9;">
-                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                        Guardar
-                                    </button>
+
+                                    <form action="#" method="POST" id="">
+
+                                        <button type="button" class="btn btn-info text-white"
+                                            style="background-color: #04D9D9; border-color: #04D9D9;">
+                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                            Guardar
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -207,8 +212,8 @@
                     </div>
 
 
-                    <form action="#" method="POST" id="formularioEditarUsuario">
-                      
+                    <form action="#" method="POST" id="">
+
                         <!-- Botón de editar con modal -->
                         <button type="button" class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
                             data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -302,13 +307,18 @@
 
 
                                 <div class="modal-footer">
+
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-info text-white"
-                                        style="background-color: #04D9D9; border-color: #04D9D9;">
-                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                        Guardar
-                                    </button>
+
+                                    <form action="#" method="POST" id="">
+
+                                        <button type="button" class="btn btn-info text-white"
+                                            style="background-color: #04D9D9; border-color: #04D9D9;">
+                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                            Guardar
+                                        </button>
+                                    </form>
                                 </div>
 
                             </div>
