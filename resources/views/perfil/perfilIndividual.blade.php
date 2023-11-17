@@ -7,13 +7,14 @@
     <section class="content">
 
         <div class="container" id="container_perfil">
-            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
+            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info">
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
 
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
-                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
+                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
+                                id="foto_portada">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
                             onchange="handleCoverFileSelect(event)">
@@ -32,11 +33,11 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-4">
 
+                    <hr class="my-4">
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación</h6>
+                            <h6 class="mb-0">Tipo de identificación:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
@@ -93,6 +94,7 @@
                                 {{-- Modal verificar contraseña actual --}}
                                 <div class="modal-body">
                                     <form action="/verificar-contrasena-actual" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
@@ -102,7 +104,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;"
                                                 data-bs-toggle="modal" data-bs-target="#PassModal"
                                                 data-bs-dismiss="modal">
@@ -112,7 +114,6 @@
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -131,6 +132,7 @@
 
                                 <div class="modal-body">
                                     <form action="/cambiar-contrasena" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
@@ -139,21 +141,15 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
                                             </button>
                                         </div>
-
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3 password-container">
-                        <div class="col-sm-3 text-secondary">
                         </div>
                     </div>
 
@@ -195,10 +191,11 @@
 
                                 <div class="modal-body">
                                     <form action="/ruta-de-edicion" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="tipo_identificacion" class="form-label">Nombre
+                                                <label for="nombre_completolbl" class="form-label">Nombre
                                                     completo:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -208,7 +205,7 @@
                                         </div>
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="tipo_identificacion" class="form-label">Tipo de
+                                                <label for="tipo_identificacionlbl" class="form-label">Tipo de
                                                     identificación:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -219,18 +216,18 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="numero_identificacion" class="form-label">Número de
+                                                <label for="numero_identificacionlbl" class="form-label">Número de
                                                     identificación:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="numero_identificacion"
+                                                <input type="number" class="form-control" id="numero_identificacion"
                                                     name="numero_identificacion" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="correo_electronico" class="form-label">Correo
+                                                <label for="correo_electronicolbl" class="form-label">Correo
                                                     electrónico:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -241,28 +238,31 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="telefono" class="form-label">Teléfono:</label>
+                                                <label for="telefonolbl" class="form-label">Teléfono:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="telefono"
+                                                <input type="number" class="form-control" id="telefono"
                                                     name="telefono" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="id_estado" class="form-label">Estado:</label>
+                                                <label for="id_estadolbl" class="form-label">Estado:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="id_estado"
-                                                    name="id_estado" value="">
+                                                <select class="form-select" id="id_estado">
+                                                    <option value="activo">Activo</option>
+                                                    <option value="inactivo">Inactivo
+                                                    </option>
+                                                </select>
                                             </div>
                                         </div>
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
@@ -273,5 +273,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

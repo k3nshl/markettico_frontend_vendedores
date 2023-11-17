@@ -10,17 +10,20 @@
                 <div class="card-body" id="cardbody_perfil">
                     <div class="position-relative">
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
-                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo" id="coverPhoto">
+                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
+                                id="coverPhoto">
                         </label>
-                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*" onchange="handleCoverFileSelect(event)">
-                    
+                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
+                            onchange="handleCoverFileSelect(event)">
+
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
                             <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
-                                <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1" width="110"
-                                    style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
+                                <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
+                                    width="110" style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
                             </label>
-                            <input type="file" id="inputFile" style="display: none;" accept="image/*" onchange="handleFileSelect(event)">
-                    
+                            <input type="file" id="inputFile" style="display: none;" accept="image/*"
+                                onchange="handleFileSelect(event)">
+
                             <div class="mt-3 profile-info">
                                 <span id="id_vendedor_propietario">Delia Smith</span>
                                 <p class="text-secondary mb-1">Vendedor</p>
@@ -28,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <hr class="my-4">
 
@@ -111,30 +114,27 @@
 
                                 {{-- Modal verificar contraseña actual --}}
                                 <div class="modal-body">
-                                    <form>
+                                    <form action="/verificar-contrasena-actual" method="POST">
+                                        @method('post')
+                                        @csrf
 
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
                                                 actual:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;"
+                                                data-bs-toggle="modal" data-bs-target="#PassModal"
+                                                data-bs-dismiss="modal">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Verificar
+                                            </button>
                                     </form>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-
-                                    <form action="#" method="POST" id="">
-
-                                        <button type="button" class="btn btn-info text-white"
-                                            style="background-color: #04D9D9; border-color: #04D9D9;"
-                                            data-bs-toggle="modal" data-bs-target="#PassModal" data-bs-dismiss="modal">
-                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                            Verificar
-                                        </button>
-                                    </form>
-
                                 </div>
                             </div>
                         </div>
@@ -153,26 +153,26 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form>
+                                    <form action="/cambiar-contrasena" method="POST">
+                                        @method('post')
+                                        @csrf
 
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-                                    </form>
-                                </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
 
-                                    <form action="#" method="POST" id="">
 
-                                        <button type="button" class="btn btn-info text-white"
-                                            style="background-color: #04D9D9; border-color: #04D9D9;">
-                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                            Guardar
-                                        </button>
+
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
                                     </form>
                                 </div>
                             </div>
@@ -212,17 +212,14 @@
                     </div>
 
 
-                    <form action="#" method="POST" id="">
-
-                        <!-- Botón de editar con modal -->
-                        <button type="button" class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
-                            data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Editar Usuario" style="color: #F2F2F2;">
-                            Editar información
-                        </button>
-                    </form>
 
 
+                    <!-- Botón de editar con modal -->
+                    <button type="button" class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
+                        data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Editar Usuario" style="color: #F2F2F2;">
+                        Editar información
+                    </button>
 
                     <!-- Modal de edición -->
                     <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
@@ -237,7 +234,9 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form>
+                                    <form action="/ruta-de-edicion" method="POST">
+                                        @method('post')
+                                        @csrf
 
                                         <div class="row mb-3">
                                             <div class="col-sm">
@@ -259,7 +258,7 @@
                                             <div class="col-sm">
                                                 <label for="telefono_empresarial_label" class="form-label">Teléfono
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="telefono_empresarial">
+                                                <input type="number" class="form-control" id="telefono_empresarial">
                                             </div>
                                         </div>
 
@@ -267,7 +266,7 @@
                                             <div class="col-sm">
                                                 <label for="correo_empresarial_label" class="form-label">Correo
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="correo_empresarial">
+                                                <input type="email" class="form-control" id="correo_empresarial">
                                             </div>
                                         </div>
 
@@ -280,17 +279,24 @@
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="id_estado_label" class="form-label">Estado:</label>
-                                                <input type="text" class="form-control" id="id_estado">
+                                            <div class="col-sm-4">
+                                                <label for="id_estadolbl" class="form-label">Estado:</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <select class="form-select" id="id_estado">
+                                                    <option value="activo">Activo</option>
+                                                    <option value="inactivo">Inactivo
+                                                    </option>
+                                                </select>
                                             </div>
                                         </div>
+
 
                                         <div class="row mb-3">
                                             <div class="col-sm">
                                                 <label for="numero_identificaciona_label" class="form-label">Número de
                                                     identificación:</label>
-                                                <input type="text" class="form-control" id="numero_identificacion">
+                                                <input type="number" class="form-control" id="numero_identificacion">
                                             </div>
                                         </div>
 
@@ -302,22 +308,18 @@
                                             </div>
                                         </div>
 
-                                    </form>
-                                </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
 
 
-                                <div class="modal-footer">
-
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-
-                                    <form action="#" method="POST" id="">
-
-                                        <button type="button" class="btn btn-info text-white"
-                                            style="background-color: #04D9D9; border-color: #04D9D9;">
-                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                            Guardar
-                                        </button>
+                                            <button type="button" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
+                                        </div>
                                     </form>
                                 </div>
 
