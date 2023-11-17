@@ -47,14 +47,16 @@
                                     <div class="text-center">
                                         <h3 class="">Inicia sesión</h3>
                                     </div>
-                                    <div class="login-separater text-center mb-4"> <span>INICA SESIÓN CON TU CORREO EMPRESARIAL Y
+                                    <div class="login-separater text-center mb-4"> <span>INICA SESIÓN CON TU CORREO
+                                            EMPRESARIAL Y
                                             CONTRASEÑA</span>
                                         <hr />
                                     </div>
                                     <div class="form-body">
                                         <form class="row g-3">
                                             <div class="col-12">
-                                                <label for="inputEmailAddress" class="form-label">Correo Empresarial</label>
+                                                <label for="inputEmailAddress" class="form-label">Correo
+                                                    Empresarial</label>
                                                 <input type="user" class="form-control" id="inputUser"
                                                     placeholder="Correo Empresarial">
                                             </div>
@@ -68,14 +70,16 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-
                                             </div>
-                                            <div class="col-md-6 text-end">
-
+                                            <div class="col-md-6 text-end"> <a class="col-md-6 text-end"
+                                                    data-bs-toggle="modal" data-bs-target="#verifContra"
+                                                    data-bs-placement="top">¿Recuperar Contraseña?
+                                                </a>
                                             </div>
                                             <div class="col-12">
                                                 <div class="d-grid">
-                                                    <a type="submit" class="btn btn-primary" href="{{ route('verif')}}"><i
+                                                    <a type="submit" class="btn btn-primary"
+                                                        href="{{ route('verif') }}"><i
                                                             class="bx bxs-lock-open"></i>Inicia Sesión</a>
                                                 </div>
                                             </div>
@@ -86,9 +90,49 @@
                         </div>
                     </div>
                 </div>
-                <!--end row-->
+
+                <!--Inicio modal show producto-->
+                <div class="modal fade" id="verifContra" tabindex="-1" aria-labelledby="showProductModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">¿Olvidaste tu Contraseña?</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <br><br>
+                                        <h6 class="text-muted">No te preocupes. Escribe tu correo para recuperar tu
+                                            cuenta.</h6>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control border-end-0"
+                                                id="verificacionCorreo" value="" placeholder="Verificar Correo">
+                                            <a href="javascript:;" class="input-group-text bg-transparent"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="../assets/images/login-images/verificacion_contrasena.jpg" class="card-img login-img h-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Regresar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--Fin modal show producto-->
+            <!--end row-->
         </div>
+    </div>
     </div>
     <!--end wrapper-->
     <!-- Bootstrap JS -->
