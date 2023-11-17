@@ -1,16 +1,16 @@
 @extends('plantilla')
 
-@section('gestion_nombre', 'Agregar-Producto')
+@section('gestion_nombre', 'Editar-Servicio')
 
 @section('contenido')
 
     <div class="card">
         <div class="card-body p-4">
-            <h5 class="card-title">Registrar nuevo producto</h5>
+            <h5 class="card-title">Editando servicio: Nombre_Servicio</h5>
             <hr />
             <div class="form-body mt-4">
 
-                <form action="{{ route('productos.store') }}" method="POST">
+                <form action="{{route('servicios.update', 1)}}" method="POST">
                     @method('post')
                     @csrf
 
@@ -20,16 +20,16 @@
                                 <div class="mb-3">
                                     <label for="inputProductTitle" class="form-label">Nombre del producto o servicio</label>
                                     <input type="text" class="form-control" id="inputProductTitle"
-                                        placeholder="Producto o Servicio" name="nombre">
+                                        placeholder="Nombre" name="nombre">
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputProductDescription" class="form-label">Descripción</label>
-                                    <textarea class="form-control" id="summernoteResgitrarProductoServicio" rows="3" placeholder="Descripción"
-                                    name="descripcion"></textarea>
+                                    <textarea class="form-control" id="summernoteResgitrarProductoServicio" rows="3" 
+                                    placeholder="Descripción" name="descripcion"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputProductDescription" class="form-label">Imagenes</label>
-                                    <input id="image-uploadify" type="file" accept="image/*" multiple name="imagen">
+                                    <input id="image-uploadify" type="file" accept="image/*" name="imagen" multiple>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,8 @@
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <label for="inputPrice" class="form-label">Precio</label>
-                                        <input type="number" class="form-control" id="inputPrice" placeholder="00.00" name="precio">
+                                        <input type="number" class="form-control" id="inputPrice" 
+                                        placeholder="00.00" name="precio">
                                     </div>
 
                                     <div class="col-12">
@@ -66,7 +67,7 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="inputProductTags" class="form-label">Teléfono</label>
-                                        <input type="text" class="form-control" id="inputProductTags"
+                                        <input type="number" class="form-control" id="inputProductTags"
                                             placeholder="Ingrese numero de teléfono" name="telefono">
                                     </div>
                                     <div class="col-12">
@@ -78,10 +79,6 @@
                                         <label for="inputProductTags" class="form-label">Email</label>
                                         <input type="email" class="form-control" id="inputProductTags"
                                             placeholder="Ingrese su correo electronico" name="email">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="inputProductTags" class="form-label">Años de experiencia</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="text" name="anios_experiencia">
                                     </div>
                                     <div class="col-12">
                                         <label for="inputProductTags" class="form-label">Titulo profesional</label>

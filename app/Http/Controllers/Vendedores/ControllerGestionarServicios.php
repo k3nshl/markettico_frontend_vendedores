@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Vendedores;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ControllerGestionarProductos extends Controller
+class ControllerGestionarServicios extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('productos.index');
+        return view('servicios.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function create()
     {
-        return view('productos.create');
+        return view('servicios.create');
     }
 
     /**
@@ -28,7 +28,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function store(Request $request)
     {
-        return "store productos";
+        //
     }
 
     /**
@@ -44,7 +44,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function edit(string $id)
     {
-        return view('productos.edit', compact('id'));
+        return view('servicios.edit', compact('id'));
     }
 
     /**
@@ -52,7 +52,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return "update servicios";
     }
 
     /**

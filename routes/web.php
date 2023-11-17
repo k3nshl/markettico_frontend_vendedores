@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
+use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,8 @@ Route::get('/perfilIndividual/{id}', [ControllerPefil::class, 'perfilIndividual'
 
 
 Route::resource('productos', ControllerGestionarProductos::class);
+Route::resource('servicios', ControllerGestionarServicios::class);
+
 
 
 

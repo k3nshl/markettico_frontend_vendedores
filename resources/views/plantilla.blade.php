@@ -64,11 +64,14 @@
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon"><i class='lni lni-package'></i>
                         </div>
-                        <div class="menu-title">Productos</div>
+                        <div class="menu-title">Inventarios</div>
                     </a>
                     <ul>
-                        <li> <a href="{{ route('productos.index') }}"><i
-                                    class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
+                        <li> <a href="{{ route('productos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                                Productos</a>
+                        </li>
+                        <li> <a href="{{ route('servicios.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                                Servicios</a>
                         </li>
                     </ul>
                 </li>
@@ -310,13 +313,13 @@
     <script src="{{ asset('assets/plugins/sparkline-charts/jquery.sparkline.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/jquery-knob/excanvas.js') }}"></script>
     <script src="{{ asset('assets/plugins/jquery-knob/jquery.knob.js') }}"></script>
-    <script src="{{ asset('assets/js/index.js') }}"></script> 
+    <script src="{{ asset('assets/js/index.js') }}"></script>
 
     <script src="{{ asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js') }}"></script>
     <!--Editor de texto mejorado-->
-   
+
     <script src="{{ asset('../assets/plugins/textarea-definitive/summernote-lite.js') }}"></script>
 
     <script>
