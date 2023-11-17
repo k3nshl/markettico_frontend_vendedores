@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
 use App\Http\Controllers\Vendedores\ControllerPefil;
+use App\Http\Controllers\Vendedores\ControllerLogin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,10 @@ Route::get('/perfilIndividual/{id}', [ControllerPefil::class, 'perfilIndividual'
 
 
 Route::resource('productos', ControllerGestionarProductos::class);
+
+
+Route::resource('login', ControllerLogin::class);
+Route:: get('/verificacion', [ControllerLogin::class,'verificar'])->name('verif');
 
 
 
