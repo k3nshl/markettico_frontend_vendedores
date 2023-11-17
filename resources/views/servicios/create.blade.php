@@ -25,7 +25,7 @@
                                 <div class="mb-3">
                                     <label for="inputProductDescription" class="form-label">Descripción</label>
                                     <textarea class="form-control" id="summernoteResgitrarProductoServicio" rows="3" placeholder="Descripción"
-                                    name="descripcion"></textarea>
+                                        name="descripcion"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputProductDescription" class="form-label">Imagenes</label>
@@ -35,22 +35,16 @@
                         </div>
                         <div class="col-lg-4 mb-4">
                             <div class="border border-3 p-4 rounded">
-                                <div class="col-12">
-                                    <label for="inputProductType" class="form-label">Tipo</label>
-                                    <select class="form-select" id="inputProductType">
-                                        <option value="1">Producto</option>
-                                        <option value="2">Servicio</option>
-                                    </select>
-                                </div>
                                 <div class="row g-3">
                                     <div class="col-12">
                                         <label for="inputPrice" class="form-label">Precio</label>
-                                        <input type="number" class="form-control" id="inputPrice" placeholder="00.00" name="precio">
+                                        <input type="number" class="form-control" id="inputPrice" placeholder="00.00"
+                                            name="precio">
                                     </div>
 
                                     <div class="col-12">
                                         <label for="inputVendor" class="form-label">Categoría</label>
-                                        <select class="form-select" id="inputVendor">
+                                        <select class="form-select" id="inputVendor" name="categoria">
                                             <option value="1">Categoria 1</option>
                                             <option value="2">Categoria 2</option>
                                             <option value="3">Categoria 3</option>
@@ -58,7 +52,7 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="inputCollection" class="form-label">Subcategoría</label>
-                                        <select class="form-select" id="inputCollection">
+                                        <select class="form-select" id="inputCollection" name="id_subcategoria">
                                             <option value="1">Subcategoría 1</option>
                                             <option value="2">Subcategoría 2</option>
                                             <option value="3">Subcategoría 3</option>
@@ -81,7 +75,8 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="inputProductTags" class="form-label">Años de experiencia</label>
-                                        <input class="form-control form-control-sm" id="formFileSm" type="text" name="anios_experiencia">
+                                        <input class="form-control form-control-sm" id="formFileSm" type="text"
+                                            name="anios_experiencia">
                                     </div>
                                     <div class="col-12">
                                         <label for="inputProductTags" class="form-label">Titulo profesional</label>

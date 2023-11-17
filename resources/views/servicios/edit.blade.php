@@ -11,7 +11,7 @@
             <div class="form-body mt-4">
 
                 <form action="{{route('servicios.update', 1)}}" method="POST">
-                    @method('post')
+                    @method('put')
                     @csrf
 
                     <div class="row">
