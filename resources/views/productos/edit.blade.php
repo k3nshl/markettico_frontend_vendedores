@@ -1,12 +1,12 @@
 @extends('plantilla')
 
-@section('gestion_nombre', 'Agregar-Producto')
+@section('gestion_nombre', 'Editar-Producto')
 
 @section('contenido')
 
     <div class="card">
         <div class="card-body p-4">
-            <h5 class="card-title">Registrar nuevo producto</h5>
+            <h5 class="card-title">Editando producto: Nombre_Producto</h5>
             <hr />
             <div class="form-body mt-4">
 
