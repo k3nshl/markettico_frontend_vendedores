@@ -36,7 +36,7 @@
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación</h6>
+                            <h6 class="mb-0">Tipo de identificación:</h6>
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
@@ -103,7 +103,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;"
                                                 data-bs-toggle="modal" data-bs-target="#PassModal"
                                                 data-bs-dismiss="modal">
@@ -140,7 +140,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
@@ -149,11 +149,6 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3 password-container">
-                        <div class="col-sm-3 text-secondary">
                         </div>
                     </div>
 
@@ -245,7 +240,7 @@
                                                 <label for="telefonolbl" class="form-label">Teléfono:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="telefono"
+                                                <input type="number" class="form-control" id="telefono"
                                                     name="telefono" value="">
                                             </div>
                                         </div>
@@ -266,7 +261,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
@@ -277,5 +272,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
