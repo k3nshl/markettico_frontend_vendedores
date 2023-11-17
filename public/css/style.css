@@ -1,37 +1,36 @@
+#card_perfil img {
+    border-radius: 3%;
+}
 
-
-
-    #card_perfil img {
-        border-radius: 3%;
-    }
-    .cover-photo {
-        height: 307px;
-        overflow: hidden;
-    }
+.cover-photo {
+    height: 307px;
+    overflow: hidden;
+}
 
 
 
 .theadUsuariosAdministradores {
     background-color: #05C7F2;
-    color: #F2F2F2!important;
-  }
-  .form-group {
+    color: #F2F2F2 !important;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
 .form-group label {
     align-self: flex-start;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .form-group input {
-    height: 100px; 
+    height: 100px;
 }
 
-.navtab_estados{
+.navtab_estados {
     background-color: #05C7F2;
-    color: #F2F2F2!important;
+    color: #F2F2F2 !important;
 }
 
 /* Estilo para el botón activo */
@@ -42,8 +41,10 @@
 
 /* Estilo para los botones inactivos */
 .nav-pills .nav-item .nav-link:not(.active) {
-    background-color: transparent; /* Color de fondo predeterminado */
-    color: #000; /* Color de texto para botones inactivos */
+    background-color: transparent;
+    /* Color de fondo predeterminado */
+    color: #000;
+    /* Color de texto para botones inactivos */
 }
 
 
@@ -60,7 +61,7 @@
     border-radius: 50%;
 }
 
-#cardbody_perfil{
+#cardbody_perfil {
     padding: 30px;
 }
 
@@ -95,30 +96,30 @@
 
 /*color de texto del login*/
 .login-text {
-	font-size: 22px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	letter-spacing: 1px;
-	color: #F2F2F2
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    color: #F2F2F2
 }
 
 /*color de rectangulos de estadistica*/
 .estadisticaRectangulos {
-	font-size: 22px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	letter-spacing: 1px;
-	color: #04D9B2
+    font-size: 22px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    color: #04D9B2
 }
 
 /*Estilos para números del correo autentificacion*/
 
 .colorCorreo {
-	font-size:23px;
-    line-height:20px;
-    color:#fcfdff;
-    margin:0;
-    word-break:break-word
+    font-size: 23px;
+    line-height: 20px;
+    color: #fcfdff;
+    margin: 0;
+    word-break: break-word
 }
 
 #card_perfil img {
@@ -140,3 +141,47 @@
 #inputFile {
     display: none;
 }
+
+
+
+/*Botones flotantes de las cards de productos*/
+
+.mi-card {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.mi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mi-card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mi-card:hover .mi-overlay {
+    opacity: 1;
+}
+
+.mi-btn{
+   margin-bottom: 10px;
+   background-color: #04D9D9;
+   color: #dad9d9;
+}
+
+.mi-btn:hover{
+    background-color: rgb(4, 116, 116);
+    color: #F2F2F2;
+ }

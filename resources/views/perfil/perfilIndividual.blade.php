@@ -7,7 +7,7 @@
     <section class="content">
 
         <div class="container" id="container_perfil">
-            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="card_perfil">
+            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
@@ -21,15 +21,14 @@
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
                             <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
-                                    width="110" style="background-color: #04D9B2; z-index: 1;">
+                                    width="110" style="background-color: #04D9B2; z-index: 1;"  id="foto_perfil">
                             </label>
                             <input type="file" id="inputFile" style="display: none;" accept="image/*"
                                 onchange="handleFileSelect(event)">
 
                             <div class="mt-3 profile-info">
-                                <span id="id_vendedor_propietario">Delia Smith</span>
+                                <span id="nombre_completo">Delia Smith</span>
                                 <p class="text-secondary mb-1">Vendedor</p>
-                                <span id="ubicacion" class="text-muted font-size-sm">Limón city</span>
                             </div>
                         </div>
                     </div>
@@ -195,53 +194,62 @@
                                 <div class="modal-body">
                                     <form action="/ruta-de-edicion" method="POST">
                                         <div class="row mb-3">
-                                            <div class="col-sm-3">
-                                                <label for="tipo_identificacion" class="form-label">Tipo de
-                                                    identificación</label>
+                                            <div class="col-sm-4">
+                                                <label for="tipo_identificacion" class="form-label">Nombre completo:</label>
                                             </div>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="nombre_completo"
+                                                    name="nombre_completo" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-sm-4">
+                                                <label for="tipo_identificacion" class="form-label">Tipo de
+                                                    identificación:</label>
+                                            </div>
+                                            <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="tipo_identificacion"
                                                     name="tipo_identificacion" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <label for="numero_identificacion" class="form-label">Número de
                                                     identificación:</label>
                                             </div>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="numero_identificacion"
                                                     name="numero_identificacion" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <label for="correo_electronico" class="form-label">Correo
                                                     electrónico:</label>
                                             </div>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-8">
                                                 <input type="email" class="form-control" id="correo_electronico"
                                                     name="correo_electronico" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <label for="telefono" class="form-label">Teléfono:</label>
                                             </div>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="telefono"
                                                     name="telefono" value="">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-4">
                                                 <label for="id_estado" class="form-label">Estado:</label>
                                             </div>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="id_estado"
                                                     name="id_estado" value="">
                                             </div>

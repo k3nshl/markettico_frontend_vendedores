@@ -27,13 +27,18 @@
     <link rel="stylesheet" href="{{ asset('../assets/css/icons.css') }}">
     <!--Estilos propios-->
     <link rel="stylesheet" type="text/css" href="{{ asset('../css/style.css') }}">
-
     <!--plugins-->
     <link rel="stylesheet" type="text/css"
         href="{{ asset('../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}">
 
 
-    <title>MarketTico Admin</title>
+    <!--plugins editor de texto mejorado-->
+    <link rel="stylesheet" href="{{ asset('../assets/plugins/textarea-definitive/summernote-lite.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('../assets/plugins/textarea-definitive/summernote-bs5.min.css') }}">
+
+
+    <title>MarketTico Vendedores Admin</title>
 </head>
 
 <body>
@@ -57,35 +62,37 @@
                 <li class="menu-label">Vendedor</li>
                 <li>
                     <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class='lni lni-crown'></i>
+                        <div class="parent-icon"><i class='lni lni-package'></i>
                         </div>
                         <div class="menu-title">Productos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
+                        <li> <a href="{{ route('productos.index') }}"><i
+                                    class="bx bx-right-arrow-alt"></i>Gestionar Productos</a>
                         </li>
                     </ul>
                 </li>
+                <!--ESTA OPCION ES SOLO PARA LOS MULTITIENDA-->
                 <li>
                     <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class="fadeIn animated bx bx-bot"></i>
+                        <div class="parent-icon"><i class="fadeIn animated lni lni-restaurant"></i>
                         </div>
-                        <div class="menu-title">Opcion 2</div>
+                        <div class="menu-title">Tiendas</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Opcion</a>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Tiendas</a>
                         </li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class="fadeIn animated bx bx-bot"></i>
+                        <div class="parent-icon"><i class="fadeIn animated lni lni-cart-full"></i>
                         </div>
-                        <div class="menu-title">Opcion 3</div>
+                        <div class="menu-title">Pedidos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Opcion</a>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pedidos</a>
                         </li>
                     </ul>
                 </li>
@@ -303,10 +310,15 @@
     <script src="{{ asset('assets/plugins/sparkline-charts/jquery.sparkline.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/jquery-knob/excanvas.js') }}"></script>
     <script src="{{ asset('assets/plugins/jquery-knob/jquery.knob.js') }}"></script>
+    <script src="{{ asset('assets/js/index.js') }}"></script> 
 
-    <script src="{{ asset('assets/js/index.js') }}"></script>
     <script src="{{ asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/Drag-And-Drop/dist/imageuploadify.min.js') }}"></script>
+    <!--Editor de texto mejorado-->
+   
+    <script src="{{ asset('../assets/plugins/textarea-definitive/summernote-lite.js') }}"></script>
+
     <script>
         $(function() {
             $(".knob").knob();
@@ -386,6 +398,28 @@
             $('#password').val('');
         });
     </script>
+
+
+    {{-- Plugin Imagenes --}}
+    <script>
+        $(document).ready(function() {
+            $('#image-uploadify').imageuploadify();
+        })
+    </script>
+
+    {{-- editor de texto mejorado --}}
+    <script>
+        $(document).ready(function() {
+            $('#summernoteResgitrarProductoServicio').summernote({
+                height: 150,
+            });
+
+            $('span.note-icon-caret').remove();
+
+            $('.note-editable').css('background', '#fff');
+        });
+    </script>
+
 
 
 </body>

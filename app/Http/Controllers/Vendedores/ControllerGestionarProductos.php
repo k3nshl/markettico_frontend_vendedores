@@ -20,7 +20,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function create()
     {
-        //
+        return view('productos.create');
     }
 
     /**
@@ -44,7 +44,7 @@ class ControllerGestionarProductos extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('productos.edit', compact('id'));
     }
 
     /**
