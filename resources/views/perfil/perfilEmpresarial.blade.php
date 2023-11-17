@@ -274,7 +274,7 @@
                                             <div class="col-sm">
                                                 <label for="cedula_juridica_label" class="form-label">Cédula
                                                     juridica:</label>
-                                                <input type="number" class="form-control" id="cedula_juridica">
+                                                <input type="text" class="form-control" id="cedula_juridica">
                                             </div>
                                         </div>
 
