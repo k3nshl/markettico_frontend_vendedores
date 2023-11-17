@@ -21,7 +21,7 @@
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
                             <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
-                                    width="110" style="background-color: #04D9B2; z-index: 1;"  id="foto_perfil">
+                                    width="110" style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
                             </label>
                             <input type="file" id="inputFile" style="display: none;" accept="image/*"
                                 onchange="handleFileSelect(event)">
@@ -93,6 +93,7 @@
                                 {{-- Modal verificar contraseña actual --}}
                                 <div class="modal-body">
                                     <form action="/verificar-contrasena-actual" method="POST">
+                                        @csrf
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
                                                 actual:</label>
@@ -130,6 +131,7 @@
 
                                 <div class="modal-body">
                                     <form action="/cambiar-contrasena" method="POST">
+                                        @csrf
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
@@ -193,9 +195,11 @@
 
                                 <div class="modal-body">
                                     <form action="/ruta-de-edicion" method="POST">
+                                        @csrf
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="tipo_identificacion" class="form-label">Nombre completo:</label>
+                                                <label for="tipo_identificacion" class="form-label">Nombre
+                                                    completo:</label>
                                             </div>
                                             <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="nombre_completo"
