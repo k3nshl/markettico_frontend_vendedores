@@ -12,6 +12,9 @@ class ControllerGestionarServicios extends Controller
      */
     public function index()
     {
+
+        //$productos = Producto::paginate(10); (Se agrega cuando esten los modelos)
+
         return view('servicios.index');
     }
 

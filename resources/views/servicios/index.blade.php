@@ -165,6 +165,9 @@
         </div>
         <!--Fin modal show producto-->
 
+        {{-- Se agregan cuando se tengan datos --}}
+        {{-- {{ $productos->links() }} --}}
+
 
     </div><!--end row-->
 
