@@ -7,13 +7,14 @@
     <section class="content">
 
         <div class="container" id="container_perfil">
-            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
+            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info">
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
 
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
-                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo">
+                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
+                                id="foto_portada">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
                             onchange="handleCoverFileSelect(event)">
@@ -32,8 +33,8 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-4">
 
+                    <hr class="my-4">
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Tipo de identificación:</h6>
