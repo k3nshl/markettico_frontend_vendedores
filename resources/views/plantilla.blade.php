@@ -414,7 +414,7 @@
     <script>
         $(document).ready(function() {
             $('#summernoteResgitrarProductoServicio').summernote({
-                height: 150,
+                height: 100,
             });
 
             $('span.note-icon-caret').remove();
