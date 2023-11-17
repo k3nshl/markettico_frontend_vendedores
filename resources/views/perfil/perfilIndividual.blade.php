@@ -93,6 +93,7 @@
                                 {{-- Modal verificar contraseña actual --}}
                                 <div class="modal-body">
                                     <form action="/verificar-contrasena-actual" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
@@ -112,7 +113,6 @@
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -131,6 +131,7 @@
 
                                 <div class="modal-body">
                                     <form action="/cambiar-contrasena" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
@@ -145,7 +146,6 @@
                                                 Guardar
                                             </button>
                                         </div>
-
                                     </form>
                                 </div>
                             </div>
@@ -195,10 +195,11 @@
 
                                 <div class="modal-body">
                                     <form action="/ruta-de-edicion" method="POST">
+                                        @method('post')
                                         @csrf
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="tipo_identificacion" class="form-label">Nombre
+                                                <label for="nombre_completolbl" class="form-label">Nombre
                                                     completo:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -208,7 +209,7 @@
                                         </div>
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="tipo_identificacion" class="form-label">Tipo de
+                                                <label for="tipo_identificacionlbl" class="form-label">Tipo de
                                                     identificación:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -219,7 +220,7 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="numero_identificacion" class="form-label">Número de
+                                                <label for="numero_identificacionlbl" class="form-label">Número de
                                                     identificación:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -230,7 +231,7 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="correo_electronico" class="form-label">Correo
+                                                <label for="correo_electronicolbl" class="form-label">Correo
                                                     electrónico:</label>
                                             </div>
                                             <div class="col-sm-8">
@@ -241,7 +242,7 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="telefono" class="form-label">Teléfono:</label>
+                                                <label for="telefonolbl" class="form-label">Teléfono:</label>
                                             </div>
                                             <div class="col-sm-8">
                                                 <input type="text" class="form-control" id="telefono"
@@ -251,11 +252,14 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
-                                                <label for="id_estado" class="form-label">Estado:</label>
+                                                <label for="id_estadolbl" class="form-label">Estado:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="id_estado"
-                                                    name="id_estado" value="">
+                                                <select class="form-select" id="id_estado">
+                                                    <option value="activo">Activo</option>
+                                                    <option value="inactivo">Inactivo
+                                                    </option>
+                                                </select>
                                             </div>
                                         </div>
 
