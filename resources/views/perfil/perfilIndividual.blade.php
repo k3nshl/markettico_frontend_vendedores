@@ -219,7 +219,7 @@
                                                     identificación:</label>
                                             </div>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="numero_identificacion"
+                                                <input type="number" class="form-control" id="numero_identificacion"
                                                     name="numero_identificacion" value="">
                                             </div>
                                         </div>
