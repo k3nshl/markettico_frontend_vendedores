@@ -41,6 +41,10 @@
                                     <div>
                                         <h4 class="logo-text">MarketTico</h4>
                                     </div>
+                                    <br>
+                                    <div>
+                                        <h4 class="logo-text">Vendedores</h4>
+                                    </div>
                                 </div>
 
                                 <div class="border p-4 rounded">
@@ -58,13 +62,13 @@
                                                 <label for="inputEmailAddress" class="form-label">Correo
                                                     Empresarial</label>
                                                 <input type="user" class="form-control" id="inputUser"
-                                                    placeholder="Correo Empresarial">
+                                                    placeholder="Correo Empresarial" name="email">
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputChoosePassword" class="form-label">Contraseña</label>
                                                 <div class="input-group" id="show_hide_password">
                                                     <input type="password" class="form-control border-end-0"
-                                                        id="inputPassword" value=""
+                                                        id="inputPassword" value="" name="password"
                                                         placeholder="Ingresa Contraseña"> <a href="javascript:;"
                                                         class="input-group-text bg-transparent"></a>
                                                 </div>
@@ -78,7 +82,7 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="d-grid">
-                                                    <a type="submit" class="btn btn-primary"
+                                                    <a style="background-color: #04D9D9" type="submit" class="btn text-light"
                                                         href="{{ route('verif') }}"><i
                                                             class="bx bxs-lock-open"></i>Inicia Sesión</a>
                                                 </div>
@@ -108,9 +112,8 @@
                                         <h6 class="text-muted">No te preocupes. Escribe tu correo para recuperar tu
                                             cuenta.</h6>
                                         <div class="input-group">
-                                            <input type="email" class="form-control border-end-0"
-                                                id="verificacionCorreo" value="" placeholder="Verificar Correo">
-                                            <a href="javascript:;" class="input-group-text bg-transparent"></a>
+                                            <input type="email" class="form-control" id="inputUser"
+                                            placeholder="Correo Empresarial" name="email">
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -121,7 +124,7 @@
 
                             <div class="modal-footer">
 
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                                <button style="background-color: #04D9D9" type="button" class="btn text-light" data-bs-dismiss="modal">Enviar</button>
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Regresar</button>
                             </div>

@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//Route::view('/', 'login.correoContrasena');
+Route::view('/correoContrasena', 'login.correoContrasena');
 
 Route::view('/', 'productos.index');
 
 Route::get('/perfil/{id}', [ControllerPefil::class, 'show'])->name('perfil.show');
-//Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
+Route::view('/recuperarContrasena', 'login.recuperacionContrasena');
 
 
 Route::get('/perfilEmpresarial/{id}', [ControllerPefil::class, 'perfilEmpresarial'])->name('perfil.show');

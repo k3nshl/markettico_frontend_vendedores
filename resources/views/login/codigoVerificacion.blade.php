@@ -44,7 +44,7 @@
 											<input type="text" class="form-control" placeholder="Ingresar Código de Verificación" />
 										</div>  
 										<div class="d-grid gap-2">
-											<button type="button" class="btn btn-primary">Verificar</button> 
+											<button style="background-color: #04D9D9" type="button" class="btn text-light">Verificar</button> 
                                             <a href="{{route("login.index")}}" class="btn btn-light"><i class='bx bx-arrow-back mr-1'></i>Regresar al Login</a>
 										</div>
 									</div>
