@@ -52,17 +52,19 @@
                                         <h3 class="">Inicia sesión</h3>
                                     </div>
                                     <div class="login-separater text-center mb-4"> <span>INICA SESIÓN CON TU CORREO
-                                            EMPRESARIAL Y
+                                         O NÚMERO TELEFÓNICO Y
                                             CONTRASEÑA</span>
                                         <hr />
                                     </div>
                                     <div class="form-body">
-                                        <form class="row g-3">
+                                        <form class="row g-3" action=" " method="POST">
+                                        @method('post')
+                                        @csrf
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Correo
-                                                    Empresarial</label>
+                                                    Electrónico o Número Telefónico</label>
                                                 <input type="user" class="form-control" id="inputUser"
-                                                    placeholder="Correo Empresarial" name="email">
+                                                    placeholder="Correo o Número Telefónico" name="correoElectronico">
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputChoosePassword" class="form-label">Contraseña</label>
@@ -113,7 +115,7 @@
                                             cuenta.</h6>
                                         <div class="input-group">
                                             <input type="email" class="form-control" id="inputUser"
-                                            placeholder="Correo Empresarial" name="email">
+                                            placeholder="Correo Empresarial" name="emailRecuperacion">
                                         </div>
                                     </div>
                                     <div class="col-md-5">
@@ -125,6 +127,7 @@
                             <div class="modal-footer">
 
                                 <button style="background-color: #04D9D9" type="button" class="btn text-light" data-bs-dismiss="modal">Enviar</button>
+
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Regresar</button>
                             </div>
