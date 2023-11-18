@@ -59,26 +59,10 @@
                                             <option value="3">Subcategoría 3</option>
                                         </select>
                                     </div>
-                                    <div class="col-12">
-                                        <label for="inputProductTags" class="form-label">Teléfono</label>
-                                        <input type="text" class="form-control" id="inputProductTags"
-                                            placeholder="Ingrese número de teléfono"
-                                            oninput="this.value = this.value.replace(/[^0-9]/g, '');">
-
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="inputProductTags" class="form-label">Dirección</label>
-                                        <input type="text" class="form-control" id="inputProductTags"
-                                            placeholder="Dirección de domicilio" name="direccion">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="inputProductTags" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="inputProductTags"
-                                            placeholder="Ingrese su correo electronico" name="email">
-                                    </div>
+                                    
+                                   
                                     
                                     
-
                                 </div>
                             </div>
                         </div>
