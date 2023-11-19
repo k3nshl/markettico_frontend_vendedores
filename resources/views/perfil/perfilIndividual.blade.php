@@ -35,6 +35,7 @@
                     </div>
 
                     <hr class="my-4">
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Tipo de identificación:</h6>
@@ -43,7 +44,6 @@
                             <span id="tipo_identificacion">no sé</span>
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
@@ -52,7 +52,6 @@
                             <span id="numero_identificacion">29838727</span>
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Correo electrónico:</h6>
@@ -61,6 +60,16 @@
                             <span id="correo_electronico">charcita@gmail.com</span>
                         </div>
                     </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Teléfono:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="telefono">8924838</span>
+                        </div>
+                    </div>
+
+
 
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
@@ -114,6 +123,7 @@
                                         </div>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -153,23 +163,6 @@
                         </div>
                     </div>
 
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono">8924838</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Estado:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_estado">Activo</span>
-                        </div>
-                    </div>
-
                     <!-- Botón de editar con modal -->
                     <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
                         data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -203,27 +196,6 @@
                                                     name="nombre_completo" value="">
                                             </div>
                                         </div>
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="tipo_identificacionlbl" class="form-label">Tipo de
-                                                    identificación:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="tipo_identificacion"
-                                                    name="tipo_identificacion" value="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="numero_identificacionlbl" class="form-label">Número de
-                                                    identificación:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="number" class="form-control" id="numero_identificacion"
-                                                    name="numero_identificacion" value="">
-                                            </div>
-                                        </div>
 
                                         <div class="row mb-3">
                                             <div class="col-sm-4">
@@ -243,19 +215,6 @@
                                             <div class="col-sm-8">
                                                 <input type="number" class="form-control" id="telefono"
                                                     name="telefono" value="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="id_estadolbl" class="form-label">Estado:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select class="form-select" id="id_estado">
-                                                    <option value="activo">Activo</option>
-                                                    <option value="inactivo">Inactivo
-                                                    </option>
-                                                </select>
                                             </div>
                                         </div>
 

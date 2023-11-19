@@ -40,7 +40,7 @@
                                     <div class="col-12">
                                         <label for="inputPrice" class="form-label">Precio</label>
                                         <input type="number" class="form-control" id="inputPrice" placeholder="00.00"
-                                            name="precio">
+                                            name="precio" min=0>
                                     </div>
 
                                     <div class="col-12">
