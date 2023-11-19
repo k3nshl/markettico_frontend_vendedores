@@ -1,6 +1,6 @@
 @extends('plantilla')
 
-@section('gestion_nombre', 'Perfil')
+@section('gestion_nombre', 'Perfil Empresarial')
 
 @section('contenido')
 
@@ -8,6 +8,7 @@
         <div class="container" id="container_perfil">
             <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
                 <div class="card-body" id="cardbody_perfil">
+
                     <div class="position-relative">
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
@@ -88,14 +89,10 @@
                             <div class="d-flex flex-column">
 
 
-                                <form action="#" method="POST" id="">
-                                    <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
-                                        data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
-                                        Cambiar Contraseña
-                                    </button>
-                                </form>
-
-
+                                <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
+                                    Cambiar Contraseña
+                                </button>
                             </div>
                         </div>
                     </div>

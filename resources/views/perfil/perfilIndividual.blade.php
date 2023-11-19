@@ -35,6 +35,7 @@
                     </div>
 
                     <hr class="my-4">
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Tipo de identificación:</h6>
@@ -43,7 +44,6 @@
                             <span id="tipo_identificacion">no sé</span>
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
@@ -52,7 +52,6 @@
                             <span id="numero_identificacion">29838727</span>
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Correo electrónico:</h6>
@@ -61,7 +60,6 @@
                             <span id="correo_electronico">charcita@gmail.com</span>
                         </div>
                     </div>
-
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Teléfono:</h6>
@@ -70,6 +68,9 @@
                             <span id="telefono">8924838</span>
                         </div>
                     </div>
+
+
+                    
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
