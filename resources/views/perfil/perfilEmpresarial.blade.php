@@ -36,7 +36,6 @@
 
                     <hr class="my-4">
 
-                    
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
@@ -102,7 +101,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
@@ -155,7 +154,7 @@
                                         </div>
                                     </form>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
