@@ -139,7 +139,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form action="" method="POST">
+                                    <form action="/cambiar-contrasena" method="POST">
                                         @method('post')
                                         @csrf
                                         <div class="mb-3">
