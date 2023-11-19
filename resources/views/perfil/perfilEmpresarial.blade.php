@@ -87,8 +87,6 @@
                         </div>
                         <div class="col-sm-3 col-4 text-end">
                             <div class="d-flex flex-column">
-
-
                                 <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
                                     data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
                                     Cambiar Contraseña
