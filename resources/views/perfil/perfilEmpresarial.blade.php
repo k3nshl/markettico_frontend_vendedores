@@ -5,14 +5,16 @@
 @section('contenido')
 
     <section class="content">
+
         <div class="container" id="container_perfil">
-            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info" id="foto_portada">
+            <div class="card col-sm-8 mx-auto mt-4 border-top border-0 border-4 border-info">
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
+
                         <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
-                                id="coverPhoto">
+                                id="foto_portada">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
                             onchange="handleCoverFileSelect(event)">
@@ -26,24 +28,16 @@
                                 onchange="handleFileSelect(event)">
 
                             <div class="mt-3 profile-info">
-                                <span id="id_vendedor_propietario">Delia Smith</span>
+                                <span id="nombre_completo">Delia Smith</span>
                                 <p class="text-secondary mb-1">Vendedor</p>
-                                <span id="ubicacion" class="text-muted font-size-sm">Limón city</span>
                             </div>
                         </div>
                     </div>
 
-
                     <hr class="my-4">
 
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Nombre:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_vendedor_propietario">Vendedor 1</span>
-                        </div>
-                    </div>
+                    
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Nombre de la Empresa:</h6>
@@ -52,6 +46,8 @@
                             <span id="nombre_empresa">Apple</span>
                         </div>
                     </div>
+
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Teléfono empresarial:</h6>
@@ -60,6 +56,7 @@
                             <span id="telefono_empresarial">60020469</span>
                         </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Correo empresarial:</h6>
@@ -68,6 +65,7 @@
                             <span id="correo_empresarial">yen@gmail.com</span>
                         </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Cédula juridica:</h6>
@@ -77,7 +75,34 @@
                         </div>
                     </div>
 
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Nombre:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="id_vendedor_propietario">Vendedor 1</span>
+                        </div>
+                    </div>
 
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Número de identificación:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="numero_identificacion">29838727</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Tipo de identificación:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="tipo_identificacion">no sé</span>
+                        </div>
+                    </div>
+
+                    
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
@@ -101,7 +126,7 @@
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="VerificarContraLabel">
+                                    <h5 class="modal-title" id="VerificarContraEmpreLabel">
                                         Verificar contraseña actual</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
@@ -112,36 +137,36 @@
                                     <form action="/verificar-contrasena-actual" method="POST">
                                         @method('post')
                                         @csrf
-
                                         <div class="mb-3">
                                             <label for="VerificarContraLabel" class="form-label">Digite su contraseña
                                                 actual:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;"
                                                 data-bs-toggle="modal" data-bs-target="#PassModal"
                                                 data-bs-dismiss="modal">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Verificar
                                             </button>
+                                        </div>
                                     </form>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Modal de cambiar pass -->
-                    <div class="modal fade" id="PassModal" tabindex="-1" aria-labelledby="PassModalLabel"
+                    <div class="modal fade" id="PassModal" tabindex="-1" aria-labelledby="PassModalEmpreLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="PassModalLabel">
+                                    <h5 class="modal-title" id="PassModalEmpreLabel">
                                         Cambiar Contraseña</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
@@ -151,68 +176,29 @@
                                     <form action="/cambiar-contrasena" method="POST">
                                         @method('post')
                                         @csrf
-
                                         <div class="mb-3">
                                             <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
                                             <input type="text" class="form-control" id="password">
                                         </div>
-
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-
-
-
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
                                             </button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row mb-3 password-container">
-                        <div class="col-sm-3 text-secondary">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Estado:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_estado">Activo</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Número de identificación:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="numero_identificacion">29838727</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="tipo_identificacion">no sé</span>
-                        </div>
-                    </div>
-
-
-
-
                     <!-- Botón de editar con modal -->
-                    <button type="button" class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
+                    <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
                         data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Editar Usuario" style="color: #F2F2F2;">
+                        title="Editar Usuario" style="color: #F2F2F2; margin: 0 auto; display: block;">
                         Editar información
                     </button>
 
@@ -223,7 +209,7 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
-                                        Editar usuario empresarial</h5>
+                                        Editar datos de perfil</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
@@ -232,15 +218,6 @@
                                     <form action="/ruta-de-edicion" method="POST">
                                         @method('post')
                                         @csrf
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="id_vendedor_propietario_label"
-                                                    class="form-label">Vendedor:</label>
-                                                <input type="text" class="form-control" id="id_vendedor_propietario">
-                                            </div>
-                                        </div>
-
                                         <div class="row mb-3">
                                             <div class="col-sm">
                                                 <label for="nombre_empresa_label" class="form-label">Nombre de la
@@ -253,7 +230,7 @@
                                             <div class="col-sm">
                                                 <label for="telefono_empresarial_label" class="form-label">Teléfono
                                                     empresarial:</label>
-                                                <input type="number" class="form-control" id="telefono_empresarial">
+                                                <input type="text" class="form-control" id="telefono_empresarial">
                                             </div>
                                         </div>
 
@@ -261,7 +238,7 @@
                                             <div class="col-sm">
                                                 <label for="correo_empresarial_label" class="form-label">Correo
                                                     empresarial:</label>
-                                                <input type="email" class="form-control" id="correo_empresarial">
+                                                <input type="text" class="form-control" id="correo_empresarial">
                                             </div>
                                         </div>
 
@@ -274,42 +251,19 @@
                                         </div>
 
                                         <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="id_estadolbl" class="form-label">Estado:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <select class="form-select" id="id_estado">
-                                                    <option value="activo">Activo</option>
-                                                    <option value="inactivo">Inactivo
-                                                    </option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row mb-3">
                                             <div class="col-sm">
-                                                <label for="numero_identificaciona_label" class="form-label">Número de
-                                                    identificación:</label>
-                                                <input type="number" class="form-control" id="numero_identificacion">
+                                                <label for="id_vendedor_propietario_label"
+                                                    class="form-label">Vendedor:</label>
+                                                <input type="text" class="form-control" id="id_vendedor_propietario">
                                             </div>
                                         </div>
 
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="tipo_identificacion_label" class="form-label">Tipo de
-                                                    identificación:</label>
-                                                <input type="text" class="form-control" id="tipo_identificacion">
-                                            </div>
-                                        </div>
 
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Cerrar</button>
-
-
-                                            <button type="button" class="btn btn-info text-white"
+                                            <button type="submit" class="btn btn-info text-white"
                                                 style="background-color: #04D9D9; border-color: #04D9D9;">
                                                 <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                                 Guardar
@@ -317,11 +271,9 @@
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
