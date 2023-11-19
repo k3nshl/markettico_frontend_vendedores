@@ -28,8 +28,9 @@
                                 onchange="handleFileSelect(event)">
 
                             <div class="mt-3 profile-info">
-                                <span id="nombre_completo">Delia Smith</span>
-                                <p class="text-secondary mb-1">Vendedor</p>
+                                <span id="id_vendedor_propietario" name="id_vendedor_propietario">Delia Smith</span>
+                                <br>
+                                <span id="ubicacion" name="ubicacion" class="text-muted font-size-sm">Limón city</span>
                             </div>
                         </div>
                     </div>
@@ -71,15 +72,6 @@
                         </div>
                         <div class="col-sm-9 text-secondary">
                             <span id="cedula_juridica">702928821</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Nombre:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_vendedor_propietario">Vendedor 1</span>
                         </div>
                     </div>
 
