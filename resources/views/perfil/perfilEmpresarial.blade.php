@@ -221,7 +221,8 @@
                                             <div class="col-sm">
                                                 <label for="nombre_empresa_label" class="form-label">Nombre de la
                                                     Empresa:</label>
-                                                <input type="text" class="form-control" id="nombre_empresa">
+                                                <input type="text" class="form-control" id="nombre_empresa"
+                                                    name="nombre_empresa">
                                             </div>
                                         </div>
 
@@ -229,7 +230,8 @@
                                             <div class="col-sm">
                                                 <label for="telefono_empresarial_label" class="form-label">Teléfono
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="telefono_empresarial">
+                                                <input type="text" class="form-control" id="telefono_empresarial"
+                                                    name="telefono_empresarial">
                                             </div>
                                         </div>
 
@@ -237,15 +239,17 @@
                                             <div class="col-sm">
                                                 <label for="correo_empresarial_label" class="form-label">Correo
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="correo_empresarial">
+                                                <input type="text" class="form-control" id="correo_empresarial"
+                                                    name="correo_empresarial">
                                             </div>
                                         </div>
 
                                         <div class="row mb-3">
                                             <div class="col-sm">
                                                 <label for="cedula_juridica_label" class="form-label">Cédula
-                                                    juridica:</label>
-                                                <input type="text" class="form-control" id="cedula_juridica">
+                                                    jurídica:</label>
+                                                <input type="text" class="form-control" id="cedula_juridica"
+                                                    name="cedula_juridica">
                                             </div>
                                         </div>
 
@@ -253,11 +257,10 @@
                                             <div class="col-sm">
                                                 <label for="id_vendedor_propietario_label"
                                                     class="form-label">Vendedor:</label>
-                                                <input type="text" class="form-control" id="id_vendedor_propietario">
+                                                <input type="text" class="form-control" id="id_vendedor_propietario"
+                                                    name="id_vendedor_propietario">
                                             </div>
                                         </div>
-
-
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -269,6 +272,7 @@
                                             </button>
                                         </div>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
