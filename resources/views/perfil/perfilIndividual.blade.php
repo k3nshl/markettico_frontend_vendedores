@@ -62,6 +62,14 @@
                         </div>
                     </div>
 
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Teléfono:</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <span id="telefono">8924838</span>
+                        </div>
+                    </div>
                     <div class="row mb-1 password-container">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Contraseña:</h6>
@@ -131,7 +139,7 @@
                                 </div>
 
                                 <div class="modal-body">
-                                    <form action="/cambiar-contrasena" method="POST">
+                                    <form action="" method="POST">
                                         @method('post')
                                         @csrf
                                         <div class="mb-3">
@@ -150,23 +158,6 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono">8924838</span>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Estado:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="id_estado">Activo</span>
                         </div>
                     </div>
 
