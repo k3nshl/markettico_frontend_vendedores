@@ -33,10 +33,102 @@
                                 <span id="ubicacion" name="ubicacion" class="text-muted font-size-sm">Limón city</span>
                             </div>
                         </div>
+
+
                     </div>
 
                     <hr class="my-4">
+                    <div class="row mb-3">
+                        <div class="col-sm-12 text-end">
+                            <!-- Contenido actual -->
+                            <div class="d-flex justify-content-end align-items-center">
+                                <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
+                                    <i class="bx bx-edit"></i>
+                                </button>
+                                <span class="ms-1 fw-bold">Editar información</span>
+                            </div>
+                        </div>
+                    </div>
 
+
+                    <!-- Modal de edición -->
+                    <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
+                        aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
+                                        Editar datos de perfil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="/ruta-de-edicion" method="POST">
+                                        @method('post')
+                                        @csrf
+                                        <div class="row mb-3">
+                                            <div class="col-sm">
+                                                <label for="nombre_empresa_label" class="form-label">Nombre de la
+                                                    Empresa:</label>
+                                                <input type="text" class="form-control" id="nombre_empresa"
+                                                    name="nombre_empresa">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm">
+                                                <label for="telefono_empresarial_label" class="form-label">Teléfono
+                                                    empresarial:</label>
+                                                <input type="text" class="form-control" id="telefono_empresarial"
+                                                    name="telefono_empresarial">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm">
+                                                <label for="correo_empresarial_label" class="form-label">Correo
+                                                    empresarial:</label>
+                                                <input type="text" class="form-control" id="correo_empresarial"
+                                                    name="correo_empresarial">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm">
+                                                <label for="cedula_juridica_label" class="form-label">Cédula
+                                                    jurídica:</label>
+                                                <input type="text" class="form-control" id="cedula_juridica"
+                                                    name="cedula_juridica">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm">
+                                                <label for="id_vendedor_propietario_label"
+                                                    class="form-label">Vendedor:</label>
+                                                <input type="text" class="form-control" id="id_vendedor_propietario"
+                                                    name="id_vendedor_propietario">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="submit" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
@@ -186,89 +278,51 @@
                         </div>
                     </div>
 
-                    <!-- Botón de editar con modal -->
-                    <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
-                        data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Editar Usuario" style="color: #F2F2F2; margin: 0 auto; display: block;">
-                        Editar información
-                    </button>
+                    {{-- Botón de eliminar --}}
 
-                    <!-- Modal de edición -->
-                    <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
-                        aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="row my-5">
+                        <div class="col-sm-12 text-end">
+                            <!-- Contenido actual -->
+                            <div class="d-flex justify-content align-items-center">
+                                <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
+                                    <i class="lni lni-trash"></i>
+                                </button>
+                                <span class="ms-1 fw-bold">Cerrar cuenta</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+             
+                    {{-- Modal Eliminar --}}
+                    <div class="modal fade" id="eliminarPlanModal" tabindex="-1"
+                        aria-labelledby="eliminarPlanModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
-                                        Editar datos de perfil</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                    <h5 class="modal-title" id="eliminarPlanModalLabel">
+                                        Confirmar cierre de la cuenta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-
                                 <div class="modal-body">
-                                    <form action="/ruta-de-edicion" method="POST">
-                                        @method('post')
-                                        @csrf
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="nombre_empresa_label" class="form-label">Nombre de la
-                                                    Empresa:</label>
-                                                <input type="text" class="form-control" id="nombre_empresa"
-                                                    name="nombre_empresa">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="telefono_empresarial_label" class="form-label">Teléfono
-                                                    empresarial:</label>
-                                                <input type="text" class="form-control" id="telefono_empresarial"
-                                                    name="telefono_empresarial">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="correo_empresarial_label" class="form-label">Correo
-                                                    empresarial:</label>
-                                                <input type="text" class="form-control" id="correo_empresarial"
-                                                    name="correo_empresarial">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="cedula_juridica_label" class="form-label">Cédula
-                                                    jurídica:</label>
-                                                <input type="text" class="form-control" id="cedula_juridica"
-                                                    name="cedula_juridica">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm">
-                                                <label for="id_vendedor_propietario_label"
-                                                    class="form-label">Vendedor:</label>
-                                                <input type="text" class="form-control" id="id_vendedor_propietario"
-                                                    name="id_vendedor_propietario">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-info text-white"
-                                                style="background-color: #04D9D9; border-color: #04D9D9;">
-                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                                Guardar
-                                            </button>
-                                        </div>
-                                    </form>
-
+                                    ¿Estás seguro de que deseas cerrar esta cuenta?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#eliminacionCorrectaModal">Eliminar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
