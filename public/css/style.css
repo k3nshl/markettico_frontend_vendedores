@@ -185,35 +185,3 @@
     background-color: rgb(4, 116, 116);
     color: #F2F2F2;
  }
-
-
-
- /* 
-  */
-  .position-relative {
-    position: relative;
-}
-
-.cover-photo-btn {
-    position: relative;
-    display: inline-block;
-    cursor: default; /* Establecemos el cursor predeterminado */
-}
-
-.edit-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 24px;
-    color: #fff; /* Puedes ajustar el color según tus preferencias */
-    background-color: #000; /* Puedes ajustar el fondo según tus preferencias */
-    padding: 5px;
-    border-radius: 50%;
-    display: none;
-    cursor: url('https://cdn.jsdelivr.net/boxicons/2.0.7/css/svg/bx-edit.svg'), auto;
-}
-
-.cover-photo-btn:hover .edit-icon {
-    display: block;
-}
