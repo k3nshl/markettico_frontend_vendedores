@@ -428,24 +428,23 @@
         });
     </script>
 
-
     {{-- CARGAR IMG --}}
 
     <script>
         function loadNewImage(inputId, targetImageId, isProfileModal) {
             const input = document.getElementById(inputId);
             const targetImage = document.getElementById(targetImageId);
-    
+
             const file = input.files[0];
-    
+
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
                     targetImage.src = e.target.result;
-    
+
                     // Establecer un tamaño fijo para todas las imágenes (ajusta según tus necesidades)
-                    const fixedSize = 100;
-    
+                    const fixedSize = 200;
+
                     // Aplicar estilos para mantener la forma del círculo solo en el modal de perfil
                     if (isProfileModal) {
                         targetImage.style.width = fixedSize + "px";
@@ -457,6 +456,7 @@
             }
         }
     </script>
+
 
 
 </body>
