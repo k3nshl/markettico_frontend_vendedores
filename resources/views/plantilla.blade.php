@@ -75,6 +75,20 @@
                         </li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript:;" class="has-arrow">
+                        <div class="parent-icon"><i class="fadeIn animated bx bx-money"></i>
+                        </div>
+                        <div class="menu-title">Pagos</div>
+                    </a>
+                    <ul>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pagos</a>
+                        </li>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
+                        </li>
+                    </ul>
+                </li>
                 <!--ESTA OPCION ES SOLO PARA LOS MULTITIENDA-->
                 <li>
                     <a href="javascript:;" class="has-arrow">
@@ -397,7 +411,7 @@
         });
     </script>
 
-    
+
     <script>
         function openModal(inputId) {
             // Abre el modal correspondiente

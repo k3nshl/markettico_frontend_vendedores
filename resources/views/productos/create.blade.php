@@ -44,6 +44,12 @@
                                     </div>
 
                                     <div class="col-12">
+                                        <label for="inputPrice" class="form-label">Stock</label>
+                                        <input type="number" class="form-control" id="inputPrice" placeholder="0"
+                                            name="stock" min=0>
+                                    </div>
+
+                                    <div class="col-12">
                                         <label for="inputVendor" class="form-label">Categoría</label>
                                         <select class="form-select" id="inputVendor" name="categoria">
                                             <option value="1">Categoria 1</option>
