@@ -11,21 +11,26 @@
                 <div class="card-body" id="cardbody_perfil">
 
                     <div class="position-relative">
+                        <!-- Portada -->
+                        <div>
+                            <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada"
+                                onclick="openModal('portadaModal')">
+                                <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
+                                    id="foto_portada">
+                            </label>
+                            <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
+                                onclick="preventDefault(event)">
+                        </div>
 
-                        <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
-                            <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
-                                id="foto_portada">
-                        </label>
-                        <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
-                            onchange="handleCoverFileSelect(event)">
-
-                        <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
-                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
+                        <!-- Perfil -->
+                        <div class="profile-container">
+                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil"
+                                onclick="openModal('perfilModal')">
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
-                                    width="110" style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
+                                    width="110" style="background-color: #04D9B2;" id="foto_perfil">
                             </label>
                             <input type="file" id="inputFile" style="display: none;" accept="image/*"
-                                onchange="handleFileSelect(event)">
+                                onclick="preventDefault(event)">
 
                             <div class="mt-3 profile-info">
                                 <span id="id_vendedor_propietario" name="id_vendedor_propietario">Delia Smith</span>
@@ -33,8 +38,54 @@
                                 <span id="ubicacion" name="ubicacion" class="text-muted font-size-sm">Limón city</span>
                             </div>
                         </div>
+                    </div>
 
 
+
+                    <!-- Modal de Portada -->
+                    <div class="modal fade" id="portadaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="portadaModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <!-- Contenido del modal para la portada -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para la portada -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal de Perfil -->
+                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
+                        aria-labelledby="perfilModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <!-- Contenido del modal para el perfil -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para el perfil -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <hr class="my-4">
@@ -285,8 +336,8 @@
                             <!-- Contenido actual -->
                             <div class="d-flex justify-content align-items-center">
                                 <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
+                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Editar Usuario" style="color: #F2F2F2;">
                                     <i class="lni lni-trash"></i>
                                 </button>
                                 <span class="ms-1 fw-bold">Cerrar cuenta</span>
@@ -295,7 +346,7 @@
                     </div>
 
 
-             
+
                     {{-- Modal Eliminar --}}
                     <div class="modal fade" id="eliminarPlanModal" tabindex="-1"
                         aria-labelledby="eliminarPlanModalLabel" aria-hidden="true">

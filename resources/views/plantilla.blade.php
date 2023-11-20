@@ -369,32 +369,6 @@
     </script>
 
 
-
-    <script>
-        $(document).ready(function() {
-            $("#portada").change(function() {
-                readURL(this, "#imagen-preview-portada");
-            });
-
-            $("#otroInput").change(function() {
-                readURL(this, "#imagen-preview-otroInput");
-            });
-        });
-
-        function readURL(input, previewId) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    $(previewId).attr('src', e.target.result);
-                    $(previewId).show();
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-    </script>
-
     {{-- Para limpiar el campo de verificar contra --}}
     <script>
         $('#VerificarContra').on('hidden.bs.modal', function() {
@@ -423,6 +397,17 @@
         });
     </script>
 
+    
+    <script>
+        function openModal(inputId) {
+            // Abre el modal correspondiente
+            $('#' + inputId).modal('show');
+        }
+
+        function preventDefault(event) {
+            event.preventDefault();
+        }
+    </script>
 
 
 </body>

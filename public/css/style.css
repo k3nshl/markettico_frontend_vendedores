@@ -122,25 +122,6 @@
     word-break: break-word
 }
 
-#card_perfil img {
-    border-radius: 3%;
-}
-
-.cover-photo {
-    height: 307px;
-    overflow: hidden;
-}
-
-.profile-img-btn {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#inputFile {
-    display: none;
-}
 
 
 
@@ -185,3 +166,23 @@
     background-color: rgb(4, 116, 116);
     color: #F2F2F2;
  }
+
+
+ /* img */
+ .position-relative {
+    position: relative;
+}
+
+.cover-photo-container,
+.profile-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cover-photo-btn,
+.profile-img-btn {
+    cursor: pointer;
+}
+
+/* Estilos adicionales según sea necesario */
