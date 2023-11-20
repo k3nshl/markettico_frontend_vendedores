@@ -229,7 +229,7 @@
                                         class="p-1 rounded-circle" id="perfilActual"
                                         style="width: 150px; height: 150px;">
 
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
+                                    <button type="button" class="btn btn-light position-absolute top-0 end-0 bg-transparent border-0"
                                         style="margin: 20px; margin-right: 150px;"
                                         onclick="document.getElementById('inputNewPerfilFile').click();">
                                         <img src="{{ asset('../assets/images/editar4.png') }}" alt=""
