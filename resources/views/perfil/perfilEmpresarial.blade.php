@@ -350,19 +350,11 @@
 
                     {{-- Botón de eliminar --}}
 
-                    <div class="row my-5">
-                        <div class="col-sm-12 text-end">
-                            <!-- Contenido actual -->
-                            <div class="d-flex justify-content align-items-center">
-                                <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Usuario" style="color: #F2F2F2;">
-                                    <i class="lni lni-trash"></i>
-                                </button>
-                                <span class="ms-1 fw-bold">Cerrar cuenta</span>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="btn btn-danger btn-sm float-end" data-bs-toggle="modal"
+                    data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Cerrar sesión" style="color: #F2F2F2;">
+                    Cerrar cuenta
+                </button>
 
 
 
