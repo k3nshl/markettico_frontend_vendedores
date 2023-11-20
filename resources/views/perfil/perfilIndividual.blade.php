@@ -38,22 +38,24 @@
 
                     <hr class="my-4">
 
-                    <div class="float-end">
-                        <button class="btn btn-warning btn-sm " data-bs-toggle="modal"
-                            data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Editar datos del perfil" style="color: #F2F2F2;">
-                            <i class="bx bx-edit"></i>
-                        </button>
-                    </div>
-
-                    <div class="row mb-3">
+                    <div class="row mb-1">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Tipo de identificación:</h6>
                         </div>
-                        <div class="col-sm-9 text-secondary">
+                        <div class="col-sm-6 col-8 text-secondary">
                             <span id="tipo_identificacion">no sé</span>
                         </div>
+                        <div class="col-sm-3 col-4">
+                            <div class="float-end text-center">
+                                <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
+                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar datos del perfil" style="color: #F2F2F2;">
+                                    <i class="bx bx-edit text-center"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="row mb-3">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Número de identificación:</h6>
@@ -312,6 +314,7 @@
                         </div>
                     </div>
 
+                    {{-- Botón de cerrar cuenta  --}}
                     <button class="btn btn-danger btn-sm float-end" data-bs-toggle="modal"
                         data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
                         title="Cerrar sesión" style="color: #F2F2F2;">
@@ -338,7 +341,7 @@
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Cancelar</button>
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar</button>
+                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar cuenta</button>
                             </div>
                         </div>
                     </div>
