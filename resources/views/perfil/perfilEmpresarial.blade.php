@@ -78,7 +78,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Modal de Perfil -->
                     <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
                         aria-labelledby="perfilModalLabel" aria-hidden="true">
@@ -91,8 +90,10 @@
                                     </button>
                                 </div>
                                 <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <!-- Agregar una llamada a la función con la imagen inicial -->
                                     <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual">
+                                        id="perfilActual"
+                                        onload="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
                                     <label for="inputNewPerfilFile" class="btn btn-primary"
