@@ -242,7 +242,11 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                        <button type="button" class="btn btn-info text-white"
+                                        style="background-color: #04D9D9; border-color: #04D9D9;">
+                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                        Guardar
+                                    </button>
                                 </div>
                             </div>
                         </div>
