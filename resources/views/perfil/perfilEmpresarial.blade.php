@@ -33,7 +33,7 @@
                                 onclick="preventDefault(event)">
 
                             <div class="mt-3 profile-info" style="margin-left: 15%;">
-                                
+
                                 <span id="id_vendedor_propietario" name="id_vendedor_propietario">Delia Smith</span>
                                 <br>
                                 <span id="ubicacion" name="ubicacion" class="text-muted font-size-sm">Limón city</span>
@@ -48,7 +48,6 @@
                         aria-labelledby="portadaModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <!-- Contenido del modal para la portada -->
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -56,30 +55,54 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <!-- Aquí puedes agregar el contenido del modal para la portada -->
+                                    <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
+                                        id="portadaActual">
+                                </div>
+                                <div class="modal-footer">
+                                    <label for="inputNewPortadaFile" class="btn btn-primary"
+                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
+                                        Cambiar
+                                        <input type="file" id="inputNewPortadaFile" style="display: none;"
+                                            accept="image/*"
+                                            onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
+                                    </label>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                    <button type="button" class="btn btn-info text-white"
+                                        style="background-color: #04D9D9; border-color: #04D9D9;">
+                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                        Guardar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <!-- Modal de Perfil -->
                     <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
                         aria-labelledby="perfilModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <!-- Contenido del modal para el perfil -->
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    <!-- Aquí puedes agregar el contenido del modal para el perfil -->
+                                <div class="modal-body d-flex justify-content-center align-items-center">
+                                    <!-- Agregar una llamada a la función con la imagen inicial -->
+                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
+                                        id="perfilActual"
+                                        onload="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
+                                </div>
+                                <div class="modal-footer">
+                                    <label for="inputNewPerfilFile" class="btn btn-primary"
+                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
+                                        Cambiar
+                                        <input type="file" id="inputNewPerfilFile" style="display: none;"
+                                            accept="image/*"
+                                            onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
+                                    </label>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

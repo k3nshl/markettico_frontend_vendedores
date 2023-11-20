@@ -397,7 +397,7 @@
         });
     </script>
 
-    
+
     <script>
         function openModal(inputId) {
             // Abre el modal correspondiente
@@ -409,6 +409,39 @@
         }
     </script>
 
+
+    <script>
+        function loadNewImage(inputId, targetImageId, isProfileModal) {
+            const input = document.getElementById(inputId);
+            const targetImage = document.getElementById(targetImageId);
+
+            const file = input.files ? input.files[0] : null;
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    targetImage.src = e.target.result;
+
+                    // Establecer un tamaño fijo para todas las imágenes (ajusta según tus necesidades)
+                    const fixedSize = 200;
+
+                    // Aplicar estilos para mantener la forma del círculo solo en el modal de perfil
+                    if (isProfileModal) {
+                        targetImage.style.width = fixedSize + "px";
+                        targetImage.style.height = fixedSize + "px";
+                        targetImage.classList.add("rounded-circle");
+                    }
+                };
+                reader.readAsDataURL(file);
+            } else {
+                // Si no hay archivo (imagen inicial), aplicar el mismo estilo
+                const fixedSize = 200;
+                targetImage.style.width = fixedSize + "px";
+                targetImage.style.height = fixedSize + "px";
+                targetImage.classList.add("rounded-circle");
+            }
+        }
+    </script>
 
 </body>
 
