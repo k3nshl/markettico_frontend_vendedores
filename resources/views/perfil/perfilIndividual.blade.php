@@ -12,20 +12,22 @@
 
                     <div class="position-relative">
 
-                        <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada">
+                        <label for="inputCoverFile" class="cover-photo-btn" title="Cambiar foto de portada"
+                            onclick="openModal('portadaModal')">
                             <img src="../assets/images/portadaEm.png" alt="Portada" class="img-fluid w-100 cover-photo"
                                 id="foto_portada">
                         </label>
                         <input type="file" id="inputCoverFile" style="display: none;" accept="image/*"
-                            onchange="handleCoverFileSelect(event)">
+                            onclick="preventDefault(event)">
 
                         <div class="profile-container position-absolute top-50 start-50 translate-middle text-center">
-                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil">
+                            <label for="inputFile" class="profile-img-btn" title="Cambiar foto de perfil"
+                                onclick="openModal('perfilModal')">
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
                                     width="110" style="background-color: #04D9B2; z-index: 1;" id="foto_perfil">
                             </label>
                             <input type="file" id="inputFile" style="display: none;" accept="image/*"
-                                onchange="handleFileSelect(event)">
+                                onclick="preventDefault(event)">
 
                             <div class="mt-3 profile-info">
                                 <span id="nombre_completo">Delia Smith</span>
@@ -35,6 +37,133 @@
                     </div>
 
                     <hr class="my-4">
+
+                    <!-- Modal de Portada -->
+                    <div class="modal fade" id="portadaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="portadaModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <!-- Contenido del modal para la portada -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para la portada -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal de Perfil -->
+                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
+                        aria-labelledby="perfilModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <!-- Contenido del modal para el perfil -->
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para el perfil -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                        <div class="col-sm-12 text-end">
+                            <!-- Contenido actual -->
+                            <div class="d-flex justify-content-end align-items-center">
+                                <span class="ms-1 fw-bold">Editar información</span>
+
+                                <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar datos del perfil" style="color: #F2F2F2;">
+                                    <i class="bx bx-edit"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal de edición -->
+                    <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
+                        aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
+                                        Editar datos de perfil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form action="/ruta-de-edicion" method="POST">
+                                        @method('post')
+                                        @csrf
+                                        <div class="row mb-3">
+                                            <div class="col-sm-4">
+                                                <label for="nombre_completolbl" class="form-label">Nombre
+                                                    completo:</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="nombre_completo"
+                                                    name="nombre_completo" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-4">
+                                                <label for="correo_electronicolbl" class="form-label">Correo
+                                                    electrónico:</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" id="correo_electronico"
+                                                    name="correo_electronico" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-sm-4">
+                                                <label for="telefonolbl" class="form-label">Teléfono:</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="number" class="form-control" id="telefono"
+                                                    name="telefono" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="submit" class="btn btn-info text-white"
+                                                style="background-color: #04D9D9; border-color: #04D9D9;">
+                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                                Guardar
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row mb-3">
                         <div class="col-sm-3">
@@ -163,77 +292,6 @@
                         </div>
                     </div>
 
-                    <!-- Botón de editar con modal -->
-                    <button class="btn btn-warning btn-sm float-end" data-bs-toggle="modal"
-                        data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Editar Usuario" style="color: #F2F2F2; margin: 0 auto; display: block;">
-                        Editar información
-                    </button>
-
-                    <!-- Modal de edición -->
-                    <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
-                        aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="editarUsuarioEmpreModalLabel">
-                                        Editar datos de perfil</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <form action="/ruta-de-edicion" method="POST">
-                                        @method('post')
-                                        @csrf
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="nombre_completolbl" class="form-label">Nombre
-                                                    completo:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" id="nombre_completo"
-                                                    name="nombre_completo" value="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="correo_electronicolbl" class="form-label">Correo
-                                                    electrónico:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="email" class="form-control" id="correo_electronico"
-                                                    name="correo_electronico" value="">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mb-3">
-                                            <div class="col-sm-4">
-                                                <label for="telefonolbl" class="form-label">Teléfono:</label>
-                                            </div>
-                                            <div class="col-sm-8">
-                                                <input type="number" class="form-control" id="telefono"
-                                                    name="telefono" value="">
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-info text-white"
-                                                style="background-color: #04D9D9; border-color: #04D9D9;">
-                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                                Guardar
-                                            </button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     {{-- Botón de cerrar cuenta --}}
 
                     <div class="row my-5">
@@ -268,8 +326,7 @@
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cancelar</button>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#eliminacionCorrectaModal">Cerrar</button>
+                                        data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
