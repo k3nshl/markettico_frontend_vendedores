@@ -315,7 +315,7 @@
                                 <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#cerrarCuentaModal"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión"
                                     style="color: #F2F2F2;">
-                                    <i class="lni lni-trash"></i> Cerrar cuenta
+                                    Cerrar cuenta
                                 </button>
                             </div>
                         </div>
