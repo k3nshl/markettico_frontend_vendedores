@@ -43,15 +43,15 @@
                             <!-- Contenido actual -->
                             <div class="d-flex justify-content-end align-items-center">
                                 <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Usuario" style="color: #F2F2F2;">
+                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
                                     <i class="bx bx-edit"></i>
                                 </button>
                                 <span class="ms-1 fw-bold">Editar información</span>
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <!-- Modal de edición -->
                     <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
@@ -277,6 +277,50 @@
                             </div>
                         </div>
                     </div>
+
+                    {{-- Botón de eliminar --}}
+
+                    <div class="row my-5">
+                        <div class="col-sm-12 text-end">
+                            <!-- Contenido actual -->
+                            <div class="d-flex justify-content align-items-center">
+                                <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
+                                    <i class="lni lni-trash"></i>
+                                </button>
+                                <span class="ms-1 fw-bold">Cerrar cuenta</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+             
+                    {{-- Modal Eliminar --}}
+                    <div class="modal fade" id="eliminarPlanModal" tabindex="-1"
+                        aria-labelledby="eliminarPlanModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="eliminarPlanModalLabel">
+                                        Confirmar cierre de la cuenta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Estás seguro de que deseas cerrar esta cuenta?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#eliminacionCorrectaModal">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                 </div>
