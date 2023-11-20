@@ -109,22 +109,6 @@
                     </div>
 
 
-                    <div class="row mb-3">
-                        <div class="col-sm-12 text-end">
-                            <!-- Contenido actual -->
-                            <div class="d-flex justify-content-end align-items-center">
-                                <span class="ms-1 fw-bold">Editar información</span>
-
-                                <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Editar datos del perfil" style="color: #F2F2F2;">
-                                    <i class="bx bx-edit"></i>
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Modal de edición -->
                     <div class="modal fade" id="editarUsuarioEmpreModal" tabindex="-1"
                         aria-labelledby="editarUsuarioEmpreModalLabel" aria-hidden="true">
@@ -316,21 +300,27 @@
                         </div>
                     </div>
 
-                    {{-- Botón de cerrar cuenta --}}
-
-                    <div class="row my-5">
-                        <div class="col-sm-12 text-end">
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
                             <!-- Contenido actual -->
-                            <div class="d-flex justify-content align-items-center">
-                                <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Cerrar sesión" style="color: #F2F2F2;">
-                                    <i class="lni lni-trash"></i>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuarioEmpreModal"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Editar datos del perfil"
+                                    style="color: #F2F2F2;">
+                                    <i class="bx bx-edit"></i>
                                 </button>
-                                <span class="ms-1 fw-bold">Cerrar cuenta</span>
+                    
+                                <div class="mx-3"></div> <!-- Espacio entre los botones -->
+                    
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#cerrarCuentaModal"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar sesión"
+                                    style="color: #F2F2F2;">
+                                    Cerrar cuenta
+                                </button>
                             </div>
                         </div>
                     </div>
+                    
 
                     {{-- Modal de cerrar cuenta --}}
                     <div class="modal fade" id="cerrarCuentaModal" tabindex="-1"
