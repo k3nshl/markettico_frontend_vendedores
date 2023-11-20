@@ -32,7 +32,8 @@
                             <input type="file" id="inputFile" style="display: none;" accept="image/*"
                                 onclick="preventDefault(event)">
 
-                            <div class="mt-3 profile-info">
+                            <div class="mt-3 profile-info" style="margin-left: 15%;">
+                                
                                 <span id="id_vendedor_propietario" name="id_vendedor_propietario">Delia Smith</span>
                                 <br>
                                 <span id="ubicacion" name="ubicacion" class="text-muted font-size-sm">Limón city</span>
