@@ -307,7 +307,7 @@
                                 <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuarioEmpreModal"
                                     data-bs-toggle="tooltip" data-bs-placement="top" title="Editar datos del perfil"
                                     style="color: #F2F2F2;">
-                                    <i class="bx bx-edit"></i> Editar
+                                    <i class="bx bx-edit"></i>
                                 </button>
                     
                                 <div class="mx-3"></div> <!-- Espacio entre los botones -->
