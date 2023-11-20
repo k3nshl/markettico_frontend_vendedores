@@ -185,19 +185,22 @@
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
                                 <div class="modal-body position-relative">
-                                    <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100" id="portadaActual">
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0 m-3 bg-transparent border-0"
+                                    <img src="../assets/images/portadaEm.png" alt="Portada actual"
+                                        class="img-fluid w-100" id="portadaActual">
+                                    <button type="button"
+                                        class="btn btn-light position-absolute top-0 end-0 m-3 bg-transparent border-0"
                                         onclick="document.getElementById('inputNewPortadaFile').click();">
-                                        <img src="{{ asset('css/img/editar.png') }}" alt="" style="width: 30px; height: 30px;">
-
+                                        <img src="{{ asset('../assets/images/editar4.png') }}" alt=""
+                                            style="width: 30px; height: 30px;">
                                     </button>
-                                    <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
+                                    <input type="file" id="inputNewPortadaFile" style="display: none;"
+                                        accept="image/*"
                                         onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
-                                
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
@@ -219,16 +222,17 @@
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
                                 <div class="modal-body position-relative d-flex justify-content-center align-items-center">
                                     <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
                                         id="perfilActual">
-                                        
+
                                     <button type="button" class="btn btn-light position-absolute top-0 end-0"
                                         style="margin: 20px; margin-right: 150px;"
                                         onclick="document.getElementById('inputNewPerfilFile').click();">
-                                        <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
+                                        <img src="{{ asset('../assets/images/editar4.png') }}" alt=""
+                                            style="width: 30px; height: 30px;">
                                     </button>
                                     <input type="file" id="inputNewPerfilFile" style="display: none;"
                                         accept="image/*"
@@ -335,7 +339,8 @@
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Cancelar</button>
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar cuenta</button>
+                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar
+                                    cuenta</button>
                             </div>
                         </div>
                     </div>
