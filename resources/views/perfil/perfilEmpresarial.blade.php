@@ -54,10 +54,11 @@
                                 <div class="modal-body position-relative">
                                     <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
                                         id="portadaActual">
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
-                                        style="margin: 8px;"
+                                        <button type="button"
+                                        class="btn btn-light position-absolute top-0 end-0 m-3 bg-transparent border-0"
                                         onclick="document.getElementById('inputNewPortadaFile').click();">
-                                        <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
+                                        <img src="{{ asset('../assets/images/editar4.png') }}" alt=""
+                                            style="width: 30px; height: 30px;">
                                     </button>
                                     <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
                                         onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
