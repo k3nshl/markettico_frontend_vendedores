@@ -457,7 +457,7 @@
                     targetImage.src = e.target.result;
 
                     // Establecer un tamaño fijo para todas las imágenes (ajusta según tus necesidades)
-                    const fixedSize = 200;
+                    const fixedSize = 150;
 
                     // Aplicar estilos para mantener la forma del círculo solo en el modal de perfil
                     if (isProfileModal) {

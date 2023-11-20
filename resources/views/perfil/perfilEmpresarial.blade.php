@@ -90,7 +90,7 @@
                                         id="perfilActual">
                                         
                                     <button type="button" class="btn btn-light position-absolute top-0 end-0"
-                                        style="margin: 20px; margin-right: 137px;"
+                                        style="margin: 20px; margin-right: 150px;"
                                         onclick="document.getElementById('inputNewPerfilFile').click();">
                                         <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
                                     </button>
