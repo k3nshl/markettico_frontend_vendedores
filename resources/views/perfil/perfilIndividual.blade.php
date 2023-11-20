@@ -225,8 +225,9 @@
                                         data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
                                 <div class="modal-body position-relative d-flex justify-content-center align-items-center">
-                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual">
+                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual"
+                                        class="p-1 rounded-circle" id="perfilActual"
+                                        style="width: 150px; height: 150px;">
 
                                     <button type="button" class="btn btn-light position-absolute top-0 end-0"
                                         style="margin: 20px; margin-right: 150px;"
