@@ -183,23 +183,20 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="portadaModalLabel">Cambiar foto de portada</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                    <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                                </div>
+                                <div class="modal-body position-relative">
+                                    <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
+                                        id="portadaActual">
+                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
+                                        style="margin: 8px;"
+                                        onclick="document.getElementById('inputNewPortadaFile').click();">
+                                        <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
                                     </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="../assets/images/portadaEm.png" alt="Portada actual"
-                                        class="img-fluid w-100" id="portadaActual">
-                                </div>
-                                <div class="modal-footer">
-                                    <label for="inputNewPortadaFile" class="btn btn-primary"
-                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
-                                        Cambiar
-                                        <input type="file" id="inputNewPortadaFile" style="display: none;"
-                                            accept="image/*"
-                                            onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
-                                    </label>
+                                    <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
+                                        onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -220,25 +217,22 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="perfilModalLabel">Cambiar foto de perfil</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
-                                <div class="modal-body d-flex justify-content-center align-items-center">
-                                    <!-- Agregar una llamada a la función con la imagen inicial -->
+                                <div class="modal-body position-relative d-flex justify-content-center align-items-center">
                                     <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual"
-                                        onload="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
-                                </div>
-                                <div class="modal-footer">
-                                    <label for="inputNewPerfilFile" class="btn btn-primary"
-                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
-                                        Cambiar
-                                        <input type="file" id="inputNewPerfilFile" style="display: none;"
-                                            accept="image/*"
-                                            onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
-                                    </label>
+                                        id="perfilActual">
+                                        
+                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
+                                        style="margin: 20px; margin-right: 150px;"
+                                        onclick="document.getElementById('inputNewPerfilFile').click();">
+                                        <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
+                                    </button>
+                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
+                                        accept="image/*"
+                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
