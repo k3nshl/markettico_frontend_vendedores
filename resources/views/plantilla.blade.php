@@ -70,6 +70,9 @@
                         <li> <a href="{{ route('productos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Productos</a>
                         </li>
+                        <li> <a href="{{ route('estadoProducto.index') }}"><i class="bx bx-right-arrow-alt"></i>Estado del 
+                                Producto</a>
+                        </li>
                         <li> <a href="{{ route('servicios.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Servicios</a>
                         </li>
