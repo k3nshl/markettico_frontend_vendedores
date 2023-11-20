@@ -234,15 +234,15 @@
                         </div>
                     </div>
 
-                    {{-- Botón de eliminar --}}
+                    {{-- Botón de cerrar cuenta --}}
 
                     <div class="row my-5">
                         <div class="col-sm-12 text-end">
                             <!-- Contenido actual -->
                             <div class="d-flex justify-content align-items-center">
                                 <button class="btn btn-danger btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#eliminarPlanModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="Editar Usuario" style="color: #F2F2F2;">
+                                    data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="Cerrar sesión" style="color: #F2F2F2;">
                                     <i class="lni lni-trash"></i>
                                 </button>
                                 <span class="ms-1 fw-bold">Cerrar cuenta</span>
@@ -250,15 +250,13 @@
                         </div>
                     </div>
 
-
-
-                    {{-- Modal Eliminar --}}
-                    <div class="modal fade" id="eliminarPlanModal" tabindex="-1"
-                        aria-labelledby="eliminarPlanModalLabel" aria-hidden="true">
+                    {{-- Modal de cerrar cuenta --}}
+                    <div class="modal fade" id="cerrarCuentaModal" tabindex="-1"
+                        aria-labelledby="cerrarCuentaModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="eliminarPlanModalLabel">
+                                    <h5 class="modal-title" id="cerrarCuentanModalLabel">
                                         Confirmar cierre de la cuenta</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
@@ -271,12 +269,11 @@
                                         data-bs-dismiss="modal">Cancelar</button>
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
                                         data-bs-toggle="modal"
-                                        data-bs-target="#eliminacionCorrectaModal">Eliminar</button>
+                                        data-bs-target="#eliminacionCorrectaModal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
