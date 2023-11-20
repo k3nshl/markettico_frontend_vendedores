@@ -70,8 +70,7 @@
                         <li> <a href="{{ route('productos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Productos</a>
                         </li>
-                        <li> <a href="{{ route('estadoProducto.index') }}"><i class="bx bx-right-arrow-alt"></i>Estado del 
-                                Producto</a>
+                        <li> <a href="{{ route('estadoProducto.index') }}"><i class="bx bx-right-arrow-alt"></i>Producto/Servicios en espera </a>
                         </li>
                         <li> <a href="{{ route('servicios.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Servicios</a>
@@ -229,6 +228,10 @@
                             </li>
                             <li><a class="dropdown-item" href="javascript:;"><i
                                         class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="{{ route('actividadCuenta.index') }}"><i
+                                        class='bx bx-home-circle'></i><span>Actividad de la cuenta</span></a>
                             </li>
                             <li>
                                 <div class="dropdown-divider mb-0"></div>

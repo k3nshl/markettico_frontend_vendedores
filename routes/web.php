@@ -5,6 +5,7 @@ use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerLogin;
 use App\Http\Controllers\Vendedores\ControllerEstadoProducto;
+use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,7 @@ Route:: get('/verificacion', [ControllerLogin::class,'verificar'])->name('verif'
 
 
 Route::resource('estadoProducto', ControllerEstadoProducto::class);
+Route::resource('actividadCuenta', ControllerActividadCuenta::class);
 
 
 
