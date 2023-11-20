@@ -47,10 +47,10 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="portadaModalLabel">Cambiar Foto de Portada</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
+                                
                                 <div class="modal-body position-relative">
                                     <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
                                         id="portadaActual">
@@ -81,9 +81,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="perfilModalLabel">Cambiar Foto de Perfil</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
                                 </div>
                                 <div class="modal-body position-relative d-flex justify-content-center align-items-center">
                                     <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual"
