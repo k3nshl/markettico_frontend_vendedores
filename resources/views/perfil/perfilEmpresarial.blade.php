@@ -40,8 +40,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <!-- Modal de Portada -->
                     <div class="modal fade" id="portadaModal" tabindex="-1" role="dialog"
                         aria-labelledby="portadaModalLabel" aria-hidden="true">
@@ -53,8 +51,16 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    <!-- Aquí puedes agregar el contenido del modal para la portada -->
+                                <div class="modal-body position-relative">
+                                    <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
+                                        id="portadaActual">
+                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
+                                        style="margin: 16px;"
+                                        onclick="document.getElementById('inputNewPortadaFile').click();">
+                                        Cambiar
+                                    </button>
+                                    <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
+                                        onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -79,8 +85,17 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
-                                    <!-- Aquí puedes agregar el contenido del modal para el perfil -->
+                                <div class="modal-body position-relative d-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
+                                        id="perfilActual">
+                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
+                                        style="margin: 8px;"
+                                        onclick="document.getElementById('inputNewPerfilFile').click();">
+                                        Cambiar
+                                    </button>
+                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
+                                        accept="image/*"
+                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -89,6 +104,7 @@
                             </div>
                         </div>
                     </div>
+
 
 
                     <hr class="my-4">
