@@ -29,8 +29,8 @@
                                 <img src="../assets/images/avatars/avatar-2.png" alt="Admin" class="rounded-circle p-1"
                                     width="110" style="background-color: #04D9B2;" id="foto_perfil">
                             </label>
-                            <input type="file" id="inputFile" style="display: none;" accept="image/*"
-                                onclick="preventDefault(event)">
+                            <input type="file" id="inputFile" style="display: none;" accept="image/*" onclic
+                                k="preventDefault(event)">
 
                             <div class="mt-3 profile-info" style="margin-left: 15%;">
 
@@ -53,16 +53,8 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body position-relative">
-                                    <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
-                                        id="portadaActual">
-                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
-                                        style="margin: 16px;"
-                                        onclick="document.getElementById('inputNewPortadaFile').click();">
-                                        Cambiar
-                                    </button>
-                                    <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
-                                        onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para la portada -->
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -87,17 +79,8 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body position-relative d-flex justify-content-center align-items-center">
-                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual">
-                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
-                                        style="    margin: 20px;    margin-right: 137px;"
-                                        onclick="document.getElementById('inputNewPerfilFile').click();">
-                                        Cambiar
-                                    </button>
-                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
-                                        accept="image/*"
-                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
+                                <div class="modal-body">
+                                    <!-- Aquí puedes agregar el contenido del modal para el perfil -->
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
