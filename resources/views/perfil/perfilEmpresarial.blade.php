@@ -63,8 +63,7 @@
                                         onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                     <button type="button" class="btn btn-info text-white"
                                         style="background-color: #04D9D9; border-color: #04D9D9;">
                                         <i class="bx bx-save" style="color: #F2F2F2;"></i>
@@ -76,7 +75,8 @@
                     </div>
 
                     <!-- Modal de Perfil -->
-                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="perfilModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
+                        aria-labelledby="perfilModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -86,11 +86,17 @@
                                     </button>
                                 </div>
                                 <div class="modal-body position-relative d-flex justify-content-center align-items-center">
-                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1 rounded-circle" id="perfilActual" style="width: 150px; height: 150px;">
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0" style="margin: 20px; margin-right: 150px;" onclick="document.getElementById('inputNewPerfilFile').click();">
+                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual"
+                                        class="p-1 rounded-circle" id="perfilActual"
+                                        style="width: 150px; height: 150px;">
+                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
+                                        style="margin: 20px; margin-right: 150px;"
+                                        onclick="document.getElementById('inputNewPerfilFile').click();">
                                         <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
                                     </button>
-                                    <input type="file" id="inputNewPerfilFile" style="display: none;" accept="image/*" onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
+                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
+                                        accept="image/*"
+                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
@@ -104,26 +110,13 @@
                             </div>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
+
+
+
+
 
 
                     <hr class="my-4">
-                    <div class="row mb-3">
-                        <div class="col-sm-12 text-end">
-                            <!-- Contenido actual -->
-                            <div class="d-flex justify-content-end align-items-center">
-                                <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
-                                    <i class="bx bx-edit"></i>
-                                </button>
-                                <span class="ms-1 fw-bold">Editar información</span>
-                            </div>
-                        </div>
-                    </div>
 
 
                     <!-- Modal de edición -->
@@ -203,157 +196,166 @@
                         </div>
                     </div>
 
-                    <div class="row mb-3">
+
+                    <div class="row mb-1">
                         <div class="col-sm-3">
                             <h6 class="mb-0">Nombre de la Empresa:</h6>
                         </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="nombre_empresa">Apple</span>
-                        </div>
-                    </div>
-
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Teléfono empresarial:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="telefono_empresarial">60020469</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Correo empresarial:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="correo_empresarial">yen@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Cédula juridica:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="cedula_juridica">702928821</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Número de identificación:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="numero_identificacion">29838727</span>
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Tipo de identificación:</h6>
-                        </div>
-                        <div class="col-sm-9 text-secondary">
-                            <span id="tipo_identificacion">no sé</span>
-                        </div>
-                    </div>
-
-
-                    <div class="row mb-1 password-container">
-                        <div class="col-sm-3">
-                            <h6 class="mb-0">Contraseña:</h6>
-                        </div>
                         <div class="col-sm-6 col-8 text-secondary">
-                            <input type="password" value="123" class="form-control" id="password" readonly>
+                            <span id="nombre_empresa">DARCY'S</span>
                         </div>
-                        <div class="col-sm-3 col-4 text-end">
-                            <div class="d-flex flex-column">
-                                <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
-                                    data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
-                                    Cambiar Contraseña
+                        <div class="col-sm-3 col-4">
+                            <div class="float-end text-center">
+                                <button class="btn btn-warning btn-sm mt-3 mt-sm-0" data-bs-toggle="modal"
+                                    data-bs-target="#editarUsuarioEmpreModal" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="Editar Usuario" style="color: #F2F2F2;">
+                                    <i class="bx bx-edit"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Modal de verificar contra actual -->
-                    <div class="modal fade" id="VerificarContra" tabindex="-1" aria-labelledby="PassModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="VerificarContraEmpreLabel">
-                                        Verificar contraseña actual</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
-                                </div>
 
-                                {{-- Modal verificar contraseña actual --}}
-                                <div class="modal-body">
-                                    <form action="/verificar-contrasena-actual" method="POST">
-                                        @method('post')
-                                        @csrf
-                                        <div class="mb-3">
-                                            <label for="VerificarContraLabel" class="form-label">Digite su contraseña
-                                                actual:</label>
-                                            <input type="text" class="form-control" id="password">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-info text-white"
-                                                style="background-color: #04D9D9; border-color: #04D9D9;"
-                                                data-bs-toggle="modal" data-bs-target="#PassModal"
-                                                data-bs-dismiss="modal">
-                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                                Verificar
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Teléfono empresarial:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <span id="telefono_empresarial">60020469</span>
+                    </div>
+                </div>
 
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Correo empresarial:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <span id="correo_empresarial">yen@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Cédula juridica:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <span id="cedula_juridica">702928821</span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Número de identificación:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <span id="numero_identificacion">29838727</span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Tipo de identificación:</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <span id="tipo_identificacion">no sé</span>
+                    </div>
+                </div>
+
+
+                <div class="row mb-1 password-container">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Contraseña:</h6>
+                    </div>
+                    <div class="col-sm-6 col-8 text-secondary">
+                        <input type="password" value="123" class="form-control" id="password" readonly>
+                    </div>
+                    <div class="col-sm-3 col-4 text-end">
+                        <div class="d-flex flex-column">
+                            <button class="btn btn-sm mb-2 mb-sm-0" data-bs-toggle="modal"
+                                data-bs-target="#VerificarContra" style="background-color: #04D9B2; color: #F2F2F2">
+                                Cambiar Contraseña
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de verificar contra actual -->
+                <div class="modal fade" id="VerificarContra" tabindex="-1" aria-labelledby="PassModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="VerificarContraEmpreLabel">
+                                    Verificar contraseña actual</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                            </div>
+
+                            {{-- Modal verificar contraseña actual --}}
+                            <div class="modal-body">
+                                <form action="/verificar-contrasena-actual" method="POST">
+                                    @method('post')
+                                    @csrf
+                                    <div class="mb-3">
+                                        <label for="VerificarContraLabel" class="form-label">Digite su contraseña
+                                            actual:</label>
+                                        <input type="text" class="form-control" id="password">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-info text-white"
+                                            style="background-color: #04D9D9; border-color: #04D9D9;"
+                                            data-bs-toggle="modal" data-bs-target="#PassModal" data-bs-dismiss="modal">
+                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                            Verificar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de cambiar pass -->
+                <div class="modal fade" id="PassModal" tabindex="-1" aria-labelledby="PassModalEmpreLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="PassModalEmpreLabel">
+                                    Cambiar Contraseña</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form action="/cambiar-contrasena" method="POST">
+                                    @method('post')
+                                    @csrf
+                                    <div class="mb-3">
+                                        <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
+                                        <input type="text" class="form-control" id="password">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-info text-white"
+                                            style="background-color: #04D9D9; border-color: #04D9D9;">
+                                            <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                            Guardar
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Modal de cambiar pass -->
-                    <div class="modal fade" id="PassModal" tabindex="-1" aria-labelledby="PassModalEmpreLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="PassModalEmpreLabel">
-                                        Cambiar Contraseña</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Cerrar"></button>
-                                </div>
+                {{-- Botón de eliminar --}}
 
-                                <div class="modal-body">
-                                    <form action="/cambiar-contrasena" method="POST">
-                                        @method('post')
-                                        @csrf
-                                        <div class="mb-3">
-                                            <label for="passwordLabel" class="form-label">Contraseña nueva:</label>
-                                            <input type="text" class="form-control" id="password">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-info text-white"
-                                                style="background-color: #04D9D9; border-color: #04D9D9;">
-                                                <i class="bx bx-save" style="color: #F2F2F2;"></i>
-                                                Guardar
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{-- Botón de eliminar --}}
-
-                    <button class="btn btn-danger btn-sm float-end" data-bs-toggle="modal"
+                <button class="btn btn-danger btn-sm float-end" data-bs-toggle="modal"
                     data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
                     title="Cerrar sesión" style="color: #F2F2F2;">
                     Cerrar cuenta
@@ -361,35 +363,34 @@
 
 
 
-                    {{-- Modal Eliminar --}}
-                    <div class="modal fade" id="eliminarPlanModal" tabindex="-1"
-                        aria-labelledby="eliminarPlanModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="eliminarPlanModalLabel">
-                                        Confirmar cierre de la cuenta</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ¿Estás seguro de que deseas cerrar esta cuenta?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#eliminacionCorrectaModal">Eliminar</button>
-                                </div>
+                {{-- Modal Eliminar --}}
+                <div class="modal fade" id="eliminarPlanModal" tabindex="-1" aria-labelledby="eliminarPlanModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eliminarPlanModalLabel">
+                                    Confirmar cierre de la cuenta</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Estás seguro de que deseas cerrar esta cuenta?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Eliminar</button>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
+
+
+
             </div>
+        </div>
         </div>
     </section>
 @endsection
