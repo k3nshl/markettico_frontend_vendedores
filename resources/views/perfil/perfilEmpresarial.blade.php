@@ -63,7 +63,8 @@
                                         onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
                                     <button type="button" class="btn btn-info text-white"
                                         style="background-color: #04D9D9; border-color: #04D9D9;">
                                         <i class="bx bx-save" style="color: #F2F2F2;"></i>
@@ -75,8 +76,7 @@
                     </div>
 
                     <!-- Modal de Perfil -->
-                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
-                        aria-labelledby="perfilModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="perfilModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -86,25 +86,28 @@
                                     </button>
                                 </div>
                                 <div class="modal-body position-relative d-flex justify-content-center align-items-center">
-                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual">
-                                        
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0"
-                                        style="margin: 20px; margin-right: 150px;"
-                                        onclick="document.getElementById('inputNewPerfilFile').click();">
+                                    <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1 rounded-circle" id="perfilActual" style="width: 150px; height: 150px;">
+                                    <button type="button" class="btn btn-light position-absolute top-0 end-0" style="margin: 20px; margin-right: 150px;" onclick="document.getElementById('inputNewPerfilFile').click();">
                                         <i class="bx bx-edit" style="font-size: 1.5rem; color: #000000;"></i>
                                     </button>
-                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
-                                        accept="image/*"
-                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
+                                    <input type="file" id="inputNewPerfilFile" style="display: none;" accept="image/*" onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-info text-white"
+                                        style="background-color: #04D9D9; border-color: #04D9D9;">
+                                        <i class="bx bx-save" style="color: #F2F2F2;"></i>
+                                        Guardar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    
+                    
+                    
 
 
                     <hr class="my-4">
