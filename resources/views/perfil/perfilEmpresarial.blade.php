@@ -42,7 +42,6 @@
                     </div>
 
 
-
                     <!-- Modal de Portada -->
                     <div class="modal fade" id="portadaModal" tabindex="-1" role="dialog"
                         aria-labelledby="portadaModalLabel" aria-hidden="true">
@@ -54,18 +53,16 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body position-relative">
                                     <img src="../assets/images/portadaEm.png" alt="Portada actual" class="img-fluid w-100"
                                         id="portadaActual">
-                                </div>
-                                <div class="modal-footer">
-                                    <label for="inputNewPortadaFile" class="btn btn-primary"
-                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
+                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
+                                        style="margin: 16px;"
+                                        onclick="document.getElementById('inputNewPortadaFile').click();">
                                         Cambiar
-                                        <input type="file" id="inputNewPortadaFile" style="display: none;"
-                                            accept="image/*"
-                                            onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
-                                    </label>
+                                    </button>
+                                    <input type="file" id="inputNewPortadaFile" style="display: none;" accept="image/*"
+                                        onchange="loadNewImage('inputNewPortadaFile', 'portadaActual', false)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -78,6 +75,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Modal de Perfil -->
                     <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog"
                         aria-labelledby="perfilModalLabel" aria-hidden="true">
@@ -89,20 +87,17 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <div class="modal-body d-flex justify-content-center align-items-center">
-                                    <!-- Agregar una llamada a la función con la imagen inicial -->
+                                <div class="modal-body position-relative d-flex justify-content-center align-items-center">
                                     <img src="../assets/images/avatars/avatar-2.png" alt="Perfil actual" class="p-1"
-                                        id="perfilActual"
-                                        onload="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
-                                </div>
-                                <div class="modal-footer">
-                                    <label for="inputNewPerfilFile" class="btn btn-primary"
-                                        style="margin: 0; background-color: #05C7F2; color: #F2F2F2;">
+                                        id="perfilActual">
+                                    <button type="button" class="btn btn-primary position-absolute top-0 end-0"
+                                        style="    margin: 20px;    margin-right: 137px;"
+                                        onclick="document.getElementById('inputNewPerfilFile').click();">
                                         Cambiar
-                                        <input type="file" id="inputNewPerfilFile" style="display: none;"
-                                            accept="image/*"
-                                            onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
-                                    </label>
+                                    </button>
+                                    <input type="file" id="inputNewPerfilFile" style="display: none;"
+                                        accept="image/*"
+                                        onchange="loadNewImage('inputNewPerfilFile', 'perfilActual', true)">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -111,6 +106,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <hr class="my-4">
                     <div class="row mb-3">
