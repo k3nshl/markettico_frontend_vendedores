@@ -77,6 +77,20 @@
                         </li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="javascript:;" class="has-arrow">
+                        <div class="parent-icon"><i class="fadeIn animated bx bx-money"></i>
+                        </div>
+                        <div class="menu-title">Pagos</div>
+                    </a>
+                    <ul>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pagos</a>
+                        </li>
+                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
+                        </li>
+                    </ul>
+                </li>
                 <!--ESTA OPCION ES SOLO PARA LOS MULTITIENDA-->
                 <li>
                     <a href="javascript:;" class="has-arrow">
@@ -403,7 +417,7 @@
         });
     </script>
 
-    
+
     <script>
         function openModal(inputId) {
             // Abre el modal correspondiente
@@ -413,7 +427,56 @@
         function preventDefault(event) {
             event.preventDefault();
         }
+
+        // Agregar un evento click al botón para evitar la apertura del explorador de archivos
+        $(document).ready(function() {
+            $(".profile-img-btn").on("click", function(e) {
+                // Evitar la apertura del explorador de archivos
+                preventDefault(e);
+
+                // Abrir el modal
+                openModal('perfilModal');
+            });
+
+            $(".cover-photo-btn").on("click", function(e) {
+                // Evitar la apertura del explorador de archivos
+                preventDefault(e);
+
+                // Abrir el modal
+                openModal('portadaModal');
+            });
+        });
     </script>
+
+    {{-- CARGAR IMG --}}
+
+    <script>
+        function loadNewImage(inputId, targetImageId, isProfileModal) {
+            const input = document.getElementById(inputId);
+            const targetImage = document.getElementById(targetImageId);
+
+            const file = input.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    targetImage.src = e.target.result;
+
+                    // Establecer un tamaño fijo para todas las imágenes (ajusta según tus necesidades)
+                    const fixedSize = 150;
+
+                    // Aplicar estilos para mantener la forma del círculo solo en el modal de perfil
+                    if (isProfileModal) {
+                        targetImage.style.width = fixedSize + "px";
+                        targetImage.style.height = fixedSize + "px";
+                        targetImage.classList.add("rounded-circle");
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+
 
 
 </body>

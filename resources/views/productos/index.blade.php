@@ -91,21 +91,32 @@
             <div class=" card mi-card">
                 <img src="assets/images/products/01.png" class="mi-card-img-top" alt="...">
 
-                <div class="card-body text-center text-dark rounded-2" style="background-color: #04D9D9">
+                <div class="card-body text-dark rounded-2" style="background-color: #04D9D9">
                     <h6 class="mi-card-title cursor-pointer">Silla bonita</h6>
                     <div class="clearfix">
-                        <p class="mb-0 fw-bold"><span>$240</span></p>
+                        <p class="mb-0 float-start"><strong>Stock</strong> 120</p>
+                        <p class="mb-0 float-end fw-bold"><span>$240</span></p>
                     </div>
+
                 </div>
 
                 <div class="mi-overlay">
-                    <a class="btn  mi-btn text-center" data-bs-toggle="modal" data-bs-target="#showProductModal"
+
+                    <a class="btn mi-btn text-center btn-sm" data-bs-toggle="modal" data-bs-target="#showProductModal"
                         data-bs-placement="top">
                         <i class="lni lni-eye" title="Visualizar producto">
                         </i>
                     </a>
-                    <a class="btn  mi-btn text-center" href="{{ route('productos.edit', 1) }}"><i class="bx bx-edit-alt"
-                            title="Editar producto"></i></a>
+                    <a class="btn mi-btn text-center btn-sm" href="{{ route('productos.edit', 1) }}"><i
+                            class="bx bx-edit-alt" title="Editar producto"></i></a>
+
+
+                    <a class="btn mi-btn text-center btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarProducto"
+                        data-bs-placement="top">
+                        <i class="lni lni-trash" title="Eliminar producto">
+                        </i>
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -171,6 +182,35 @@
             </div>
         </div>
         <!--Fin modal show producto-->
+
+        <!--Inicio modal edit producto-->
+        <div class="modal fade" id="eliminarProducto" tabindex="-1" aria-labelledby="eliminarProductoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="eliminarProductoModalLabel">
+                            Confirmar
+                            eliminación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Estás seguro de que
+                        deseas eliminar
+                        este producto?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <form action="" method="POST">
+                            @method('delete')
+                            @csrf
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin modal edit producto-->
 
 
     </div><!--end row-->

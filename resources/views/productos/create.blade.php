@@ -18,9 +18,9 @@
                         <div class="col-lg-8 mb-3">
                             <div class="border border-3 p-4 rounded">
                                 <div class="mb-3">
-                                    <label for="inputProductTitle" class="form-label">Nombre del producto o servicio</label>
+                                    <label for="inputProductTitle" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" id="inputProductTitle"
-                                        placeholder="Producto o Servicio" name="nombre">
+                                        placeholder="Escriba el nombre del producto" name="nombre">
                                 </div>
                                 <div class="mb-3">
                                     <label for="inputProductDescription" class="form-label">Descripción</label>
@@ -41,6 +41,12 @@
                                         <label for="inputPrice" class="form-label">Precio</label>
                                         <input type="number" class="form-control" id="inputPrice" placeholder="00.00"
                                             name="precio" min=0>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="inputPrice" class="form-label">Stock</label>
+                                        <input type="number" class="form-control" id="inputPrice" placeholder="0"
+                                            name="stock" min=0>
                                     </div>
 
                                     <div class="col-12">
