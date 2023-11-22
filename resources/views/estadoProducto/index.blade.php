@@ -185,6 +185,132 @@
                                                            
                                                             </td>
                                                         </tr>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>EjemploProducto</td>
+                                                            <td >Espera</td>
+                                                           
+                                                            <td>
+                                                                <div class="text-center">
+
+                                                                    {{-- Botón de Visualizar --}}
+                                                                    <button class="btn btn-primary btn-sm"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#showEsperaModal"
+                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                                                        title="Visualizar">
+                                                                        <div class="text-center">
+                                                                            <i class="lni lni-eye"
+                                                                                style="color: #FFFFFF; margin: 0 auto; display: block;"></i>
+                                                                        </div>
+                                                                    </button>
+
+                                                                </div>
+
+                                                                <!-- Modal de visualizacion -->
+                                                                <div class="modal fade" id="showEsperaModal"
+                                                                    data-backdrop="static" data-keyboard="false"
+                                                                    tabindex="-1" aria-labelledby="showUserModalLabel"
+                                                                    aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-scrollable">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title"
+                                                                                    id="showPlanModalLabel">
+                                                                                    Visualizar producto </h5>
+                                                                                <button type="button" class="btn-close"
+                                                                                    data-bs-dismiss="modal"
+                                                                                    aria-label="Close"
+                                                                                    data-bs-toggle="tooltip"
+                                                                                    data-bs-placement="top"
+                                                                                    title="Cerrar"></button>
+                                                                            </div>
+
+                                                                            <div class="modal-body">
+                                                                                <form>
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="nombre"
+                                                                                            class="col-sm-4 col-form-label">Nombre
+                                                                                            del producto: 
+                                                                                        </label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="tipo"
+                                                                                            class="col-sm-4 col-form-label">Descripción:</label>
+                                                                                    </div>
+
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Precio:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Estado:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Vendedor:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Categoria:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Subcategoria:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Experiencia:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Titulo
+                                                                                            profesional:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Teléfono:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Dirección:</label>
+                                                                                    </div>
+
+                                                                                    <div class="row mb-3">
+                                                                                        <label for="costo"
+                                                                                            class="col-sm-4 col-form-label">Email:</label>
+                                                                                    </div>
+
+                                                                                </form>
+                                                                            </div>
+
+                                                                            <div class="modal-footer">
+                                                                                <button type="button"
+                                                                                    class="btn btn-secondary"
+                                                                                    data-bs-dismiss="modal">Regresar</button>
+                                                                              
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                           
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
