@@ -13,9 +13,9 @@
 
                         <div class="tab-content">
 
-                            <!-- tab-Espera -->
+                           
 
-                            <div class="tab-pane  show active fade" id="tab-espera">
+                            <div class="tab-pane  show active fade" id="tab-historial">
                                 <div class="row justify-content-center align-items-center">
                                     <div class="col">
                                         <div class="border p-3 rounded">
@@ -30,7 +30,7 @@
                                             <hr />
                                             <div class="table-responsive">
                                                 <table id="tablaProductosEspera" class="table table-bordered">
-                                                    <thead class="theadProductosEspera">
+                                                    <thead class="theadHistorial">
                                                         <tr>
                                                             <th class="bg_datatable"
                                                                 style="background-color: #05C7F2; color: #F2F2F2">ID</th>

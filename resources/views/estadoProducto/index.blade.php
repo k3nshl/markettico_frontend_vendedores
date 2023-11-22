@@ -65,8 +65,9 @@
                                                         <tr>
                                                             <td>1</td>
                                                             <td>EjemploProducto</td>
-                                                            <td>Aprobado</td>
-                                                           
+                                                            <td>
+                                                                <p class="badge bg-primary">Espera</p>
+                                                            </td>
                                                             <td>
                                                                 <div class="text-center">
 
@@ -191,8 +192,9 @@
                                                         <tr>
                                                             <td>2</td>
                                                             <td>EjemploProducto</td>
-                                                            <td >Espera</td>
-                                                           
+                                                            <td>
+                                                                <p class="badge bg-success">Aprobado</p>
+                                                            </td>
                                                             <td>
                                                                 <div class="text-center">
 
@@ -319,7 +321,7 @@
                                 </div>
                             </div>
 
-                            <!-- tab-Aprobados -->
+                            <!-- tab-servicios -->
 
                             <div class="tab-pane fade" id="tab-aprobados">
                                 <div class="row justify-content-center align-items-center">
@@ -354,8 +356,10 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
-                                                            <td>EjemploProducto</td>
-                                                            <td>Rechazado</td>
+                                                            <td>EjemploServicio</td>
+                                                            <td>
+                                                                <p class="badge bg-danger">Rechazado</p>
+                                                            </td>
                                                           
                                                             <td>
                                                                 <div class="text-center">
@@ -398,7 +402,7 @@
                                                                                     <div class="row mb-3">
                                                                                         <label for="nombre"
                                                                                             class="col-sm-4 col-form-label">Nombre
-                                                                                            del producto: 
+                                                                                            del servicio: 
                                                                                         </label>
                                                                                     </div>
 
