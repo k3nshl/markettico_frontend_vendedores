@@ -6,7 +6,12 @@ use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerGestionPagos;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerLogin;
+
+
 use App\Http\Controllers\Vendedores\ControllerSuscripciones;
+
+use App\Http\Controllers\Vendedores\ControllerRegistro;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +44,9 @@ Route::resource('suscripciones', ControllerSuscripciones::class);
 
 Route::resource('login', ControllerLogin::class);
 Route:: get('/verificacion', [ControllerLogin::class,'verificar'])->name('verif');
+
+Route::get('/registroEmpresarial', [ControllerRegistro::class, 'registroPerfilEmpresarial'])->name('registroPerfilEmpresarial');
+Route::get('/registroIndividual', [ControllerRegistro::class, 'registroPerfilIndividual'])->name('registroPerfilIndividual');
 
 
 

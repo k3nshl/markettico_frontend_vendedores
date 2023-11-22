@@ -149,7 +149,7 @@
                                             <div class="col-sm">
                                                 <label for="telefono_empresarial_label" class="form-label">Teléfono
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="telefono_empresarial"
+                                                <input type="number" class="form-control" id="telefono_empresarial"
                                                     name="telefono_empresarial">
                                             </div>
                                         </div>
@@ -158,7 +158,7 @@
                                             <div class="col-sm">
                                                 <label for="correo_empresarial_label" class="form-label">Correo
                                                     empresarial:</label>
-                                                <input type="text" class="form-control" id="correo_empresarial"
+                                                <input type="email" class="form-control" id="correo_empresarial"
                                                     name="correo_empresarial">
                                             </div>
                                         </div>
@@ -174,10 +174,10 @@
 
                                         <div class="row mb-3">
                                             <div class="col-sm">
-                                                <label for="id_vendedor_propietario_label"
-                                                    class="form-label">Vendedor:</label>
-                                                <input type="text" class="form-control" id="id_vendedor_propietario"
-                                                    name="id_vendedor_propietario">
+                                                <label for="ubicacion_label"
+                                                    class="form-label">Ubicación:</label>
+                                                <input type="text" class="form-control" id="ubicacion"
+                                                    name="ubicacion">
                                             </div>
                                         </div>
 
