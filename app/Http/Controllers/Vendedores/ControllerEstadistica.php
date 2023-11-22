@@ -15,8 +15,8 @@ class ControllerEstadistica extends Controller
         //
     }
 
-    public function reporteXVenta(){
-        return view('estadisticas.reporteXVentas');
+    public function reportesVentas(){
+        return view('estadisticas.reportesVentas');
     }
 
     public function reportesProducto(){
