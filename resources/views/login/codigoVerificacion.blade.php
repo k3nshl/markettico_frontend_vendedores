@@ -38,10 +38,10 @@
                                             </div>
                                         </div>
 										<h4 class="mt-5 font-weight-bold">Código Verificación</h4>
-										<p class="text-muted">Has recibido un código de verificación a tu correo empresarial!</p>
+										<p class="text-muted">Has recibido un código de verificación a tu correo electrónico!</p>
 										<div class="mb-3 mt-5">
 											<label class="form-label">Código</label>
-											<input type="text" class="form-control" placeholder="Ingresar Código de Verificación" />
+											<input type="text" class="form-control" placeholder="Ingresar Código de Verificación" name="verifCodigo"/>
 										</div>  
 										<div class="d-grid gap-2">
 											<button style="background-color: #04D9D9" type="button" class="btn text-light">Verificar</button> 

@@ -6,12 +6,12 @@ use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerGestionPagos;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerLogin;
-
-
-use App\Http\Controllers\Vendedores\ControllerSuscripciones;
-
+use App\Http\Controllers\Vendedores\ControllerEstadoProducto;
+use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use App\Http\Controllers\Vendedores\ControllerRegistro;
-
+use App\Http\Controllers\Vendedores\ControllerEstadistica;
+use App\Http\Controllers\Vendedores\ControllerSuscripciones;
+use App\Http\Controllers\Vendedores\ControllerRegistro;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +49,12 @@ Route::get('/registroEmpresarial', [ControllerRegistro::class, 'registroPerfilEm
 Route::get('/registroIndividual', [ControllerRegistro::class, 'registroPerfilIndividual'])->name('registroPerfilIndividual');
 
 
+Route::resource('estadoProducto', ControllerEstadoProducto::class);
+Route::resource('actividadCuenta', ControllerActividadCuenta::class);
+
+
+
+Route::get('/reportesProductos', [ControllerEstadistica::class, 'reportesProducto'])->name('reportesProductos');
 
 
 
