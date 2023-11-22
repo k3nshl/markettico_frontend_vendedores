@@ -42,3 +42,4 @@ Route::get('/registroIndividual', [ControllerRegistro::class, 'registroPerfilInd
 
 
 
+
