@@ -85,7 +85,9 @@
                     <ul>
                         <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pagos</a>
                         </li>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
+                        <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
+                        </li>
+                        <li> <a href="{{ route('suscripciones.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Suscripciones</a>
                         </li>
                     </ul>
                 </li>

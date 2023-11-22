@@ -1,10 +1,17 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
 use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
+use App\Http\Controllers\Vendedores\ControllerGestionPagos;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerLogin;
+
+
+use App\Http\Controllers\Vendedores\ControllerSuscripciones;
+
 use App\Http\Controllers\Vendedores\ControllerRegistro;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,7 +38,8 @@ Route::get('/perfilIndividual/{id}', [ControllerPefil::class, 'perfilIndividual'
 
 Route::resource('productos', ControllerGestionarProductos::class);
 Route::resource('servicios', ControllerGestionarServicios::class);
-
+Route::resource('pagos', ControllerGestionPagos::class);
+Route::resource('suscripciones', ControllerSuscripciones::class);
 
 
 Route::resource('login', ControllerLogin::class);
