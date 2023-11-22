@@ -43,7 +43,9 @@
                                     </div>
 
                                     <div class="form-body">
-                                        <form class="row g-3">
+                                        <form class="row g-3" action="/ruta-de-edicion" method="POST">
+                                            @method('post')
+                                            @csrf
                                             <div class="col-12">
                                                 <label for="nombre_empresa_label" class="form-label">Nombre de
                                                     empresa</label>

@@ -52,8 +52,9 @@
                                     </div>
 
                                     <div class="form-body">
-                                        <form class="row g-3">
-                                            <form class="row g-3">
+                                            <form class="row g-3" action="/ruta-de-edicion" method="POST">
+                                                @method('post')
+                                                @csrf
                                                 <div class="col-12">
                                                     <label for="inputNombre" class="form-label">Nombre completo:</label>
                                                     <input type="text" class="form-control" id="nombre_completo"
