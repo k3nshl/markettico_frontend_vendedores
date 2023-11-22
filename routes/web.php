@@ -53,10 +53,8 @@ Route::resource('estadoProducto', ControllerEstadoProducto::class);
 Route::resource('actividadCuenta', ControllerActividadCuenta::class);
 
 
-
 Route::get('/reportesProductos', [ControllerEstadistica::class, 'reportesProducto'])->name('reportesProductos');
-
-
+Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])->name('reportesVentas');
 
 
 
