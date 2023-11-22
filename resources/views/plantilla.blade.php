@@ -126,7 +126,7 @@
                         <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Reportes por ventas</a>
                         </li>
 
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Reportes por productos</a>
+                        <li> <a href="{{ route('reportesProductos') }}"><i class="bx bx-right-arrow-alt"></i>Reportes por productos</a>
                         </li>
                     </ul>
                 </li>

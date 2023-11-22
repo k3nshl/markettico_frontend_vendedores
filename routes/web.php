@@ -7,6 +7,7 @@ use App\Http\Controllers\Vendedores\ControllerLogin;
 use App\Http\Controllers\Vendedores\ControllerEstadoProducto;
 use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use App\Http\Controllers\Vendedores\ControllerRegistro;
+use App\Http\Controllers\Vendedores\ControllerEstadistica;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,4 +48,6 @@ Route::resource('estadoProducto', ControllerEstadoProducto::class);
 Route::resource('actividadCuenta', ControllerActividadCuenta::class);
 
 
+
+Route::get('/reportesProductos', [ControllerEstadistica::class, 'reportesProducto'])->name('reportesProductos');
 
