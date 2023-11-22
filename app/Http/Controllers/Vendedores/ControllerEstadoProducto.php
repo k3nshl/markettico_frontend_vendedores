@@ -5,31 +5,23 @@ namespace App\Http\Controllers\Vendedores;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ControllerEstadistica extends Controller
+class ControllerEstadoProducto extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
-    }
 
-    public function reporteXVenta(){
-        return view('estadisticas.reporteXVentas');
+        return view('estadoProducto.index');
     }
-
-    public function reportesProducto(){
-        return view('estadisticas.reportesProductos');
-    }
-
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        //
+        return view('productos.create');
     }
 
     /**
@@ -37,7 +29,7 @@ class ControllerEstadistica extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "store productos";
     }
 
     /**
@@ -53,7 +45,7 @@ class ControllerEstadistica extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('productos.edit', compact('id'));
     }
 
     /**

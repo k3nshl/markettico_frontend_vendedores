@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Vendedores;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ControllerEstadistica extends Controller
+class ControllerActividadCuenta extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,14 +13,7 @@ class ControllerEstadistica extends Controller
     public function index()
     {
         //
-    }
-
-    public function reporteXVenta(){
-        return view('estadisticas.reporteXVentas');
-    }
-
-    public function reportesProducto(){
-        return view('estadisticas.reportesProductos');
+        return view("actividadCuenta.index");
     }
 
 
