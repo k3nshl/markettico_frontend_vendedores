@@ -6,6 +6,7 @@ use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerGestionPagos;
 use App\Http\Controllers\Vendedores\ControllerPefil;
 use App\Http\Controllers\Vendedores\ControllerLogin;
+use App\Http\Controllers\Vendedores\ControllerMetodoPago;
 use App\Http\Controllers\Vendedores\ControllerEstadoProducto;
 use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use App\Http\Controllers\Vendedores\ControllerRegistro;
@@ -40,6 +41,8 @@ Route::resource('productos', ControllerGestionarProductos::class);
 Route::resource('servicios', ControllerGestionarServicios::class);
 Route::resource('pagos', ControllerGestionPagos::class);
 Route::resource('suscripciones', ControllerSuscripciones::class);
+Route::resource('metodoPago', ControllerMetodoPago::class);
+
 
 
 Route::resource('login', ControllerLogin::class);
