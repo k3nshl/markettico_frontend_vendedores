@@ -83,7 +83,7 @@
                         <div class="menu-title">Pagos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pagos</a>
+                        <li> <a href="{{ route('metodoPago.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Pago</a>
                         </li>
                         <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
                         </li>
