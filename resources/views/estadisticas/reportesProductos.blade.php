@@ -142,9 +142,12 @@
                                                                                     class="btn btn-secondary"
                                                                                     data-bs-dismiss="modal">Regresar</button>
                                                                                     
-                                                                                    <button type="button"
-                                                                                    class="btn btn-primary"
-                                                                                    data-bs-dismiss="modal">Exportar PDF</button>
+                                                                                    <a href="#" class="btn btn-danger me-2">
+                                                                                      <i class="bx bxs-file-pdf"></i>
+                                                                                          </a>
+                                                                                     <a href="#" class="btn btn-success">
+                                                                                        <i class="bx bxs-calculator"></i>
+                                                                                                     </a>
                                                                             </div>
                                                                         </div>
                                                                     </div>

@@ -12,7 +12,6 @@ use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use App\Http\Controllers\Vendedores\ControllerRegistro;
 use App\Http\Controllers\Vendedores\ControllerEstadistica;
 use App\Http\Controllers\Vendedores\ControllerSuscripciones;
-use App\Http\Controllers\Vendedores\ControllerRegistro;
 use Illuminate\Support\Facades\Route;
 
 /*
