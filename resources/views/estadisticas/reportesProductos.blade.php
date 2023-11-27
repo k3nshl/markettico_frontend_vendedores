@@ -1,79 +1,73 @@
 @extends('plantilla')
 
-@section('gestion_nombre', 'Reportes/Productos')
+@section('gestion_nombre', 'Reportes Productos')
 
 @section('contenido')
-<section class="content">
+
+    <section class="content">
         <div class="row">
-            <div class="col-xl-10 mx-auto">
-                <div class="card border-top border-0 border-4 border-info" style="margin: 5%">
+            <div class="col-12">
+                <div class="card radius-10">
                     <div class="card-body">
+                        <h4 class="header-title mb-4">Reporte De Productos</h4>
 
-                        <ul class="nav nav-pills mb-3" role="tablist">
-                            <li class="nav-item">
-                              
-                            </li>
-                            <li class="nav-item">
-                                
-                            </li>
-                        
-                        </ul>
+                        <!-- Formulario para personalizar el período -->
+                        <form action="#" method="post" class="mb-4">
+                            @csrf
+                            <div class="row">
+                         
+                                <div class="col-md-3">
+                                    <label for="frecuencia">Frecuencia:</label>
+                                    <select name="frecuencia" class="form-control" required>
+                                        <option value="diaria">Diariamente</option>
+                                        <option value="semanal">Semanalmente</option>
+                                        <option value="quincenal">Cada 15 días</option>
+                                        <option value="mensual">Cada 30 días</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="submit" class="btn btn-primary mt-3"
+                                        style="background-color: #04D9B2; border-color: #04D9B2;">Generar
+                                        Estadística</button>
 
-                        <div class="tab-content">
+                                </div>
+                                <div class="col-md-3">
 
-                            <!-- tab-Espera -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                            <div class="tab-pane  show active fade" id="tab-espera">
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col">
-                                        <div class="border p-3 rounded">
 
-                                            <div class="d-flex justify-content-between align-items-end mb-3">
-                                                <h5 class="text-dark"><i
-                                                        class="lni  me-2 font-22 text-info"></i>Reportes Productos
-                                               
-                                                </h5>
-                                            </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var productosSelect = document.getElementById('productos');
 
-                                            <hr />
-                                            <div class="table-responsive">
-                                                <table id="tablaProductosEspera" class="table table-bordered">
-                                                    <thead class="theadProductosEspera">
-                                                        <tr>
-                                                            <th class="bg_datatable"
-                                                                style="background-color: #05C7F2; color: #F2F2F2">ID</th>
-                                                            <th class="bg_datatable"
-                                                                style="background-color: #05C7F2; color: #F2F2F2">Nombre del
-                                                                producto</th>
-                                                          
-                                                          
-                                                            <th class="bg_datatable"
-                                                                style="background-color: #05C7F2; color: #F2F2F2">Ver</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>EjemploProducto1</td>
-                                                         
-                                                            <td>
-                                                                <div class="text-center">
+        productosSelect.addEventListener('change', function() {
+            var selectedProducto = productosSelect.value;
+            
+            // Asegúrate de que la opción seleccionada no sea la predeterminada
+            if (selectedProducto !== "") {
+                // Abre el modal
+                $('#showEsperaModal').modal('show');
+            }
+        });
+    });
+</script>
 
-                                                                    {{-- Botón de Visualizar --}}
-                                                                    <button class="btn btn-primary btn-sm"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#showEsperaModal"
-                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                        title="Visualizar">
-                                                                        <div class="text-center">
-                                                                            <i class="lni lni-eye"
-                                                                                style="color: #FFFFFF; margin: 0 auto; display: block;"></i>
-                                                                        </div>
-                                                                    </button>
 
-                                                                </div>
+<body>
 
-                                                                <!-- Modal de visualizacion -->
+    <label for="productos">Selecciona un producto:</label>
+     <select id="productos"  class="form-control" required   >
+     <option value="">Seleccione</option> 
+      <option value="producto1">Producto 1</option> 
+        <option value="producto2">Producto 2</option>
+        <option value="producto3">Producto 3</option>
+        <option value="producto4">Producto 4</option>
+    </select>
+
+   
+                                    
+
+                                                            <!-- Modal de visualizacion -->
                                                                 <div class="modal fade" id="showEsperaModal"
                                                                     data-backdrop="static" data-keyboard="false"
                                                                     tabindex="-1" aria-labelledby="showUserModalLabel"
@@ -94,30 +88,6 @@
 
                                                                             <div class="modal-body">
                                                                                 <form>
-                                                                                    <div class="row mb-3">
-                                                                                        <label for="nombre"
-                                                                                            class="col-sm-4 col-form-label">Nombre
-                                                                                            del producto: 
-                                                                                        </label>
-                                                                                    </div>
-
-                                                                                    <div class="row mb-3">
-                                                                                        <label for="tipo"
-                                                                                            class="col-sm-4 col-form-label">Descripción:</label>
-                                                                                    </div>
-
-
-                                                                                    <div class="row mb-3">
-                                                                                        <label for="costo"
-                                                                                            class="col-sm-4 col-form-label">Precio:</label>
-                                                                                    </div>
-
-                                                                            
-
-                                                                                    <div class="row mb-3">
-                                                                                        <label for="costo"
-                                                                                            class="col-sm-4 col-form-label">Vendedor:</label>
-                                                                                    </div>
 
                                                                                     <div class="row mb-3">
                                                                                         <label for="costo"
@@ -153,43 +123,41 @@
                                                                     </div>
                                                                 </div>
 
-                                                           
-                                                            </td>
-                                                        </tr>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>EjemploProducto2</td>
-                                                          
-                                                            <td>
-                                                                <div class="text-center">
+                                                       
+                                              
 
-                                                                    {{-- Botón de Visualizar --}}
-                                                                    <button class="btn btn-primary btn-sm"
-                                                                        data-bs-toggle="modal"
-                                                                        data-bs-target="#showEsperaModal"
-                                                                        data-bs-toggle="tooltip" data-bs-placement="top"
-                                                                        title="Visualizar">
-                                                                        <div class="text-center">
-                                                                            <i class="lni lni-eye"
-                                                                                style="color: #FFFFFF; margin: 0 auto; display: block;"></i>
-                                                                        </div>
-                                                                    </button>
+  
 
-                                                                </div>
 
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
+                        </form>
+
+                        <!-- Gráfico o tabla de historial de ventas -->
+                        <div class="card radius-10">
+                            <div class="card-body">
+                                <p class="visually-hidden">Historial de Productos</p>
+                                <div id="list-subscribers"></div>
+                            </div>
+                        </div>
 
 
-    
+                        <div class="row align-items-end mt-auto">
+                            <div class="col-md-10 mt-4">
+                                <!-- Ventas totales -->
+                                <h5>Cantidad de productos vendidos: <span class="text-primary">14</span></h5>
+
+                            </div>
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/dashboard-digital-marketing.js"></script>
+        <script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+    </section>
 @endsection
