@@ -91,7 +91,7 @@
                         </li>
                         <li> <a href="{{ route('suscripciones.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Suscripciones</a>
                         </li>
-                    </ul>
+                    </ul> 
                 </li>
                 <!--ESTA OPCION ES SOLO PARA LOS MULTITIENDA-->
                 <li>
@@ -113,7 +113,7 @@
                         <div class="menu-title">Pedidos</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Gestionar Pedidos</a>
+                        <li> <a href="{{ route('pedidos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Pedidos</a>
                         </li>
                     </ul>
                 </li>

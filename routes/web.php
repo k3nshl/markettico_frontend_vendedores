@@ -11,6 +11,7 @@ use App\Http\Controllers\Vendedores\ControllerEstadoProducto;
 use App\Http\Controllers\Vendedores\ControllerActividadCuenta;
 use App\Http\Controllers\Vendedores\ControllerRegistro;
 use App\Http\Controllers\Vendedores\ControllerEstadistica;
+use App\Http\Controllers\Vendedores\ControllerGestionPedidos;
 use App\Http\Controllers\Vendedores\ControllerSuscripciones;
 use Illuminate\Support\Facades\Route;
 
@@ -58,5 +59,7 @@ Route::resource('actividadCuenta', ControllerActividadCuenta::class);
 Route::get('/reportesProductos', [ControllerEstadistica::class, 'reportesProducto'])->name('reportesProductos');
 Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])->name('reportesVentas');
 
+
+Route::resource('pedidos', ControllerGestionPedidos::class);
 
 

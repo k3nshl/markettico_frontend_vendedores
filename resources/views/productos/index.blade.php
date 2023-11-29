@@ -102,22 +102,22 @@
 
                 <div class="mi-overlay">
 
-                    <a class="btn mi-btn text-center btn-sm" data-bs-toggle="modal" data-bs-target="#showProductModal"
-                        data-bs-placement="top">
-                        <i class="lni lni-eye" title="Visualizar producto">
-                        </i>
-                    </a>
-                    <a class="btn mi-btn text-center btn-sm" href="{{ route('productos.edit', 1) }}"><i
-                            class="bx bx-edit-alt" title="Editar producto"></i></a>
+                        <a class="btn mi-btn btn-sm" data-bs-toggle="modal" data-bs-target="#showProductModal"
+                            data-bs-placement="top">
+                            <i class="lni lni-eye" title="Visualizar producto"></i>
+                        </a>
 
+                        <a class="btn mi-btn btn-sm" href="{{ route('productos.edit', 1) }}">
+                            <i class="bx bx-edit-alt" title="Editar producto"></i>
+                        </a>
 
-                    <a class="btn mi-btn text-center btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarProducto"
-                        data-bs-placement="top">
-                        <i class="lni lni-trash" title="Eliminar producto">
-                        </i>
-                    </a>
+                        <a class="btn mi-btn btn-sm" data-bs-placement="top">
+                            <i class="lni lni-trash" title="Eliminar producto"></i>
+                        </a>
 
                 </div>
+
+
             </div>
         </div>
         <!--Fin card producto-->
