@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ControllerOferta;
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
 use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerGestionPagos;
@@ -59,4 +60,4 @@ Route::get('/reportesProductos', [ControllerEstadistica::class, 'reportesProduct
 Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])->name('reportesVentas');
 
 
-
+Route::resource('ofertas', ControllerOferta::class);
