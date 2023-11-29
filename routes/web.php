@@ -61,3 +61,6 @@ Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])-
 
 
 Route::resource('ofertas', ControllerOferta::class);
+
+
+
