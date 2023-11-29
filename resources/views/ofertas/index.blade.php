@@ -11,21 +11,20 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-xl-3">
-                            <div class="d-flex align-items-center">
-                                <div>
-                                    <i class="fadeIn animated bx bx-gift me-1 font-22 text-info"></i>
-                                </div>
-                                <h5 class="mb-0 text-dark" title="Agregar Anuncio">Lista de Ofertas</h5>
-                            </div>
+                            <button type="button" class="btn btn-info text-white" data-bs-toggle="modal"
+                                data-bs-target="#modalAgregarOferta"
+                                style="background-color: #04D9B2; border-color: #04D9D9;" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Agregar Oferta">
+                                <i class='bx bxs-plus-square'></i> Agregar Oferta
+                            </button>
                         </div>
                         <div class="col-lg-9 col-xl-9 text-end">
                             <div class="me-2">
-                                <button type="button" class="btn btn-info text-white" data-bs-toggle="modal"
-                                    data-bs-target="#modalAgregarOferta"
-                                    style="background-color: #04D9B2; border-color: #04D9D9;" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Agregar Oferta">
-                                    <i class='bx bxs-plus-square'></i> Agregar Oferta
-                                </button>
+                                <div class="align-items-center">
+                                    <h5 class="mb-0 text-dark" title=""> <i
+                                            class="fadeIn animated bx bx-gift me-1 font-22 text-info"></i>Productos o Servicios en oferta
+                                    </h5>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -360,9 +359,7 @@
             </div>
         </div>
         <!--fin modal eliminar oferta-->
-
-
-    </div><!--end row-->
+    </div>
 
 
 @endsection
