@@ -11,12 +11,11 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-xl-3">
-
-                            <div class="align-items-center">
-                                <h5 class="mb-0 text-dark" title=""> <i
-                                        class="fadeIn animated bx bx-gift me-1 font-22 text-info"></i>Productos o Servicios
-                                    en oferta
-                                </h5>
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <i class="fadeIn animated bx bx-gift me-1 font-22 text-info"></i>
+                                </div>
+                                <h5 class="mb-0 text-dark">Lista de Ofertas</h5>
                             </div>
                         </div>
                         <div class="col-lg-9 col-xl-9 text-end">
