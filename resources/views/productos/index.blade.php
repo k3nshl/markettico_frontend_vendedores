@@ -102,18 +102,19 @@
 
                 <div class="mi-overlay">
 
-                        <a class="btn mi-btn btn-sm" data-bs-toggle="modal" data-bs-target="#showProductModal"
-                            data-bs-placement="top">
-                            <i class="lni lni-eye" title="Visualizar producto"></i>
-                        </a>
+                    <a class="btn mi-btn btn-sm" data-bs-toggle="modal" data-bs-target="#showProductModal"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Ver producto">
+                        <i class="lni lni-eye" style="color: #F2F2F2; margin: 0 auto; display: block;"></i>
+                    </a>
 
-                        <a class="btn mi-btn btn-sm" href="{{ route('productos.edit', 1) }}">
-                            <i class="bx bx-edit-alt" title="Editar producto"></i>
-                        </a>
+                    <a class="btn mi-btn btn-sm" title="Editar producto" href="{{ route('productos.edit', 1) }}">
+                        <i class="lni lni-pencil-alt" style="color: #F2F2F2; margin: 0 auto; display: block;"></i>
+                    </a>
 
-                        <a class="btn mi-btn btn-sm" data-bs-placement="top">
-                            <i class="lni lni-trash" title="Eliminar producto"></i>
-                        </a>
+                    <a class="btn mi-btn btn-sm" data-bs-toggle="modal" data-bs-target="#eliminarProducto"
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="Eliminar producto">
+                        <i class="lni lni-trash" style="color: #F2F2F2; margin: 0 auto; display: block;"></i>
+                    </a>
 
                 </div>
 
@@ -183,7 +184,7 @@
         </div>
         <!--Fin modal show producto-->
 
-        <!--Inicio modal edit producto-->
+        <!--Inicio modal eliminar-->
         <div class="modal fade" id="eliminarProducto" tabindex="-1" aria-labelledby="eliminarProductoModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
