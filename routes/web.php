@@ -62,4 +62,6 @@ Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])-
 
 Route::resource('pedidos', ControllerGestionPedidos::class);
 
+Route::view('/pedidoCancelado', 'plantillaCorreos.pedidoCancelado');
+
 
