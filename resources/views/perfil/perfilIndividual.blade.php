@@ -229,7 +229,8 @@
                                         class="p-1 rounded-circle" id="perfilActual"
                                         style="width: 150px; height: 150px;">
 
-                                    <button type="button" class="btn btn-light position-absolute top-0 end-0 bg-transparent border-0"
+                                    <button type="button"
+                                        class="btn btn-light position-absolute top-0 end-0 bg-transparent border-0"
                                         style="margin: 20px; margin-right: 150px;"
                                         onclick="document.getElementById('inputNewPerfilFile').click();">
                                         <img src="{{ asset('../assets/images/editar4.png') }}" alt=""
@@ -242,7 +243,7 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary"
                                         data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-info text-white"
+                                    <button type="button" class="btn btn-info text-white"
                                         style="background-color: #04D9D9; border-color: #04D9D9;">
                                         <i class="bx bx-save" style="color: #F2F2F2;"></i>
                                         Guardar
@@ -320,38 +321,40 @@
                     {{-- Botón de cerrar cuenta  --}}
                     <button class="btn btn-danger btn-sm float-end" data-bs-toggle="modal"
                         data-bs-target="#cerrarCuentaModal" data-bs-toggle="tooltip" data-bs-placement="top"
-                        title="Cerrar sesión" style="color: #F2F2F2;">
+                        title="Cerrar cuenta" style="color: #F2F2F2;">
                         Cerrar cuenta
                     </button>
-                </div>
 
-
-                {{-- Modal de cerrar cuenta --}}
-                <div class="modal fade" id="cerrarCuentaModal" tabindex="-1" aria-labelledby="cerrarCuentaModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="cerrarCuentanModalLabel">
-                                    Confirmar cierre de la cuenta</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ¿Estás seguro de que deseas cerrar esta cuenta?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
-                                    data-bs-toggle="modal" data-bs-target="#eliminacionCorrectaModal">Cerrar
-                                    cuenta</button>
+                    {{-- Modal de cerrar cuenta --}}
+                    <div class="modal fade" id="cerrarCuentaModal" tabindex="-1"
+                        aria-labelledby="cerrarCuentaModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form id="cerrarCuenta" action="/tu_ruta_de_procesamiento" method="POST">
+                                    @method('delete')
+                                    @csrf
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="cerrarCuentanModalLabel">
+                                            Confirmar cierre de la cuenta</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estás seguro de que deseas cerrar esta cuenta?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-danger">Cerrar
+                                            cuenta</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
         </div>
     </section>
 @endsection
