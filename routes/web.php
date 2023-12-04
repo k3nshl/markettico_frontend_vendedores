@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ControllerOferta;
 use App\Http\Controllers\Vendedores\ControllerGestionarProductos;
 use App\Http\Controllers\Vendedores\ControllerGestionarServicios;
 use App\Http\Controllers\Vendedores\ControllerGestionPagos;
@@ -63,5 +64,8 @@ Route::get('/reportesVentas', [ControllerEstadistica::class, 'reportesVentas'])-
 Route::resource('pedidos', ControllerGestionPedidos::class);
 
 Route::view('/pedidoCancelado', 'plantillaCorreos.pedidoCancelado');
+
+Route::resource('ofertas', ControllerOferta::class);
+
 
 

@@ -70,10 +70,14 @@
                         <li> <a href="{{ route('productos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Productos</a>
                         </li>
-                        <li> <a href="{{ route('estadoProducto.index') }}"><i class="bx bx-right-arrow-alt"></i>Producto/Servicios en espera </a>
+                        <li> <a href="{{ route('estadoProducto.index') }}"><i
+                                    class="bx bx-right-arrow-alt"></i>Producto/Servicios en espera </a>
                         </li>
                         <li> <a href="{{ route('servicios.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
                                 Servicios</a>
+                        </li>
+                        <li> <a href="{{ route('ofertas.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                                Ofertas</a>
                         </li>
                     </ul>
                 </li>
@@ -85,11 +89,14 @@
                         <div class="menu-title">Pagos</div>
                     </a>
                     <ul>
-                        <li> <a href="{{ route('metodoPago.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Pago</a>
+                        <li> <a href="{{ route('metodoPago.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                                Pago</a>
                         </li>
-                        <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Facturación</a>
+                        <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                                Facturación</a>
                         </li>
-                        <li> <a href="{{ route('suscripciones.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar Suscripciones</a>
+                        <li> <a href="{{ route('suscripciones.index') }}"><i
+                                    class="bx bx-right-arrow-alt"></i>Gestionar Suscripciones</a>
                         </li>
                     </ul> 
                 </li>
@@ -125,10 +132,12 @@
                         <div class="menu-title">Reportes</div>
                     </a>
                     <ul>
-                        <li> <a href="{{ route('reportesVentas') }}"><i class="bx bx-right-arrow-alt"></i>Reportes por ventas</a>
+                        <li> <a href="{{ route('reportesVentas') }}"><i class="bx bx-right-arrow-alt"></i>Reportes por
+                                ventas</a>
                         </li>
 
-                        <li> <a href="{{ route('reportesProductos') }}"><i class="bx bx-right-arrow-alt"></i>Reportes por productos</a>
+                        <li> <a href="{{ route('reportesProductos') }}"><i class="bx bx-right-arrow-alt"></i>Reportes
+                                por productos</a>
                         </li>
                     </ul>
                 </li>
@@ -148,7 +157,8 @@
                     </div>
                     <div class="search-bar flex-grow-1">
                         <div class="position-relative search-bar-box">
-                            <input type="text" class="form-control search-control" placeholder="Ingrese para buscar">
+                            <input type="text" class="form-control search-control"
+                                placeholder="Ingrese para buscar">
                             <span class="position-absolute top-50 search-show translate-middle-y"><i
                                     class='bx bx-search'></i></span>
                             <span class="position-absolute top-50 search-close translate-middle-y"><i
