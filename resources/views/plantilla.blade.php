@@ -90,13 +90,13 @@
                     </a>
                     <ul>
                         <li> <a href="{{ route('metodoPago.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
-                                Pago</a>
+                                metodo de pago</a>
                         </li>
-                        <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Gestionar
+                        <li> <a href="{{ route('pagos.index') }}"><i class="bx bx-right-arrow-alt"></i>Mi
                                 Facturación</a>
                         </li>
                         <li> <a href="{{ route('suscripciones.index') }}"><i
-                                    class="bx bx-right-arrow-alt"></i>Gestionar Suscripciones</a>
+                                    class="bx bx-right-arrow-alt"></i>Mis Suscripciones</a>
                         </li>
                     </ul> 
                 </li>
